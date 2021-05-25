@@ -8,7 +8,7 @@
     <link rel="stylesheet" href={{ asset('css/auth.css') }}>
 
 
-    <title>LOGIN</title>
+    <title>CSilluminati</title>
 </head>
 <body>
 
