@@ -61,7 +61,7 @@ body {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   background-image: url("image/doctor.png");
-  background-size: cover;
+  background-attachment: fixed;
 }
 
 hr {
@@ -610,6 +610,9 @@ progress {
   margin-right: auto;
   margin-left: auto;
   border:#000 2px solid;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px #888888;
 }
 
 @media (min-width: 576px) {
