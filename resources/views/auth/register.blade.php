@@ -36,7 +36,7 @@
                     </div>
 
                     <div class="mt-4">
-                        <input id="email" placeholder="Email" name="Email" type="email" class="myInput @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
+                        <input id="email" placeholder="Email" name="Email" type="email" class="myInput " name="email" value="{{ old('email') }}" required autocomplete="email">
             
                         @error('email')
                             <span class="invalid-feedback" role="alert">
