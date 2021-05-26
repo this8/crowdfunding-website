@@ -48,6 +48,12 @@ body {
     background: linear-gradient(45deg, #e0dd0d, #63db13);
 }
 
+p {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 400;
+}
+
 .is-invalid ~ .invalid-feedback,
 .is-invalid ~ .invalid-tooltip {
     display: block;

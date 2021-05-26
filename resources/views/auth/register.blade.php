@@ -6,7 +6,8 @@
     <div class="row " style="margin-top:200px">
 
         <div class="ui col-md-5 col-sm-12" style="margin-bottom: 50px;height: 600px;opacity:0.6; background: linear-gradient(to right, rgb(248, 242, 188), #eb7e18);">
-            <div class="box"><header style="color: red"> Terms and Condition </header></div>
+            
+                <header class="text-center" style="color: red"> Terms and Condition </header>
             
             <p>
                 &Gt;Create an account here only if you need funds for the treatment. Otherwise we are not responsible for any inconvenince. <br> <br>
@@ -57,6 +58,13 @@
             
                     <div class="mt-4">
                         <input id="password-confirm" placeholder="Confirm Password" type="password" class="myInput " name="password_confirmation" required autocomplete="new-password">
+                    </div>
+
+                    <div class="mt-4">
+                        <input type="checkbox" class="myInput" required>
+                                <br>
+                                <small>I read and agree to Terms and Conditions</small>
+                                
                     </div>
             
                     <div class="mt-4">
