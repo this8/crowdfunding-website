@@ -23,10 +23,9 @@
                 @csrf
             
                 <header>Registration</header>
-                <div class="form-group row">
 
-                    <div class="col-md-6">
-                        <input id="name" type="text" class="myInput @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+                    <div class="mt-4">
+                        <input id="name" placeholder="Name" type="text" class="myInput @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
             
                         @error('name')
                             <span class="invalid-feedback" role="alert">
@@ -34,12 +33,9 @@
                             </span>
                         @enderror
                     </div>
-                </div>
-            
-                <div class="form-group row">
-            
-                    <div class="col-md-6">
-                        <input id="email" type="email" class="myInput @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
+
+                    <div class="mt-4">
+                        <input id="email" placeholder="Email" name="Email" type="email" class="myInput @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
             
                         @error('email')
                             <span class="invalid-feedback" role="alert">
@@ -47,12 +43,9 @@
                             </span>
                         @enderror
                     </div>
-                </div>
             
-                <div class="form-group row">
-            
-                    <div class="col-md-6">
-                        <input id="password" type="password" class="myInput @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
+                    <div class="mt-4">
+                        <input id="password" placeholder="Password" type="password" class="myInput @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
             
                         @error('password')
                             <span class="invalid-feedback" role="alert">
@@ -60,22 +53,17 @@
                             </span>
                         @enderror
                     </div>
-                </div>
             
-                <div class="form-group row">
             
-                    <div class="col-md-6">
-                        <input id="password-confirm" type="password" class="myInput " name="password_confirmation" required autocomplete="new-password">
+                    <div class="mt-4">
+                        <input id="password-confirm" placeholder="Confirm Password" type="password" class="myInput " name="password_confirmation" required autocomplete="new-password">
                     </div>
-                </div>
             
-                <div class="form-group row mb-0">
-                    <div class="col-md-6 offset-md-4">
+                    <div class="mt-4">
                         <button type="submit" class="btn">
                             {{ __('Register') }}
                         </button>
                     </div>
-                </div>
             </form>
         </div>
 
