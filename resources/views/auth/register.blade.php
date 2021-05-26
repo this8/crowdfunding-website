@@ -36,7 +36,7 @@
                     </div>
 
                     <div class="mt-4">
-                        <input id="email" placeholder="Email" name="Email" type="email" class="myInput " name="email" value="{{ old('email') }}" required autocomplete="email">
+                        <input id="email" type="email" class="myInput @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" placeholder="Email" name="Email" required autocomplete="email">
             
                         @error('email')
                             <span class="invalid-feedback" role="alert">
@@ -66,12 +66,10 @@
                                 <small>I read and agree to Terms and Conditions</small>
                                 
                     </div>
-            
-                    <div class="mt-4">
-                        <button type="submit" class="btn">
+
+                    <button type="submit" class="btn">
                             {{ __('Register') }}
-                        </button>
-                    </div>
+                    </button>
             </form>
         </div>
 
