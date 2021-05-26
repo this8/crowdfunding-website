@@ -23,7 +23,7 @@
                         <br><br>
     
                 {{-- password --}}
-                        <input id="password" type="password" value="" class="myInput shadow-lg p-3 mb @error('password') is-invalid @enderror" name="password" placeholder="Password" required autocomplete="current-password">
+                        <input id="password" type="password" value="" class="myInput shadow-lg p-3 mb @error('password') is-invalid @enderror" name="password" placeholder="Password" required autocomplete="new-password">
                         
                         @error('password')
                             <span class="invalid-feedback" role="alert">
