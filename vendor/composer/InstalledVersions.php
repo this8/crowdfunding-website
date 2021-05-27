@@ -25,12 +25,12 @@ class InstalledVersions
 private static $installed = array (
   'root' => 
   array (
-    'pretty_version' => 'v8.5.18',
-    'version' => '8.5.18.0',
+    'pretty_version' => 'dev-login-register',
+    'version' => 'dev-login-register',
     'aliases' => 
     array (
     ),
-    'reference' => NULL,
+    'reference' => '0afd5079e2f1c17a6bde5d1d67b1d7a7da19cad4',
     'name' => 'laravel/laravel',
   ),
   'versions' => 
@@ -455,12 +455,12 @@ private static $installed = array (
     ),
     'laravel/laravel' => 
     array (
-      'pretty_version' => 'v8.5.18',
-      'version' => '8.5.18.0',
+      'pretty_version' => 'dev-login-register',
+      'version' => 'dev-login-register',
       'aliases' => 
       array (
       ),
-      'reference' => NULL,
+      'reference' => '0afd5079e2f1c17a6bde5d1d67b1d7a7da19cad4',
     ),
     'laravel/sail' => 
     array (
@@ -479,6 +479,24 @@ private static $installed = array (
       array (
       ),
       'reference' => '04ad32c1a3328081097a181875733fa51f402083',
+    ),
+    'laravel/ui' => 
+    array (
+      'pretty_version' => 'v3.3.0',
+      'version' => '3.3.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '07d725813350c695c779382cbd6dac0ab8665537',
+    ),
+    'laravelcollective/html' => 
+    array (
+      'pretty_version' => 'v6.2.1',
+      'version' => '6.2.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'ae15b9c4bf918ec3a78f092b8555551dd693fde3',
     ),
     'league/commonmark' => 
     array (
@@ -775,8 +793,8 @@ private static $installed = array (
     array (
       'provided' => 
       array (
-        0 => '1.0',
-        1 => '1.0.0',
+        0 => '1.0.0',
+        1 => '1.0',
       ),
     ),
     'psr/simple-cache' => 
