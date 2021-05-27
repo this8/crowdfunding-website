@@ -10,6 +10,7 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -37,6 +38,7 @@
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
 }
 
+
 *,
 *::before,
 *::after {
@@ -59,6 +61,15 @@ body {
   background-color: #fff;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  background-image: url("image/doctor.png");
+  background-attachment: fixed;
+}
+
+.content{
+  width: 75%;
+  height: 100%;
+  margin: 0 0 0 1%;
+  float: left;
 }
 
 hr {
@@ -607,6 +618,9 @@ progress {
   margin-right: auto;
   margin-left: auto;
   border:#000 2px solid;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px #888888;
 }
 
 @media (min-width: 576px) {
@@ -2936,7 +2950,7 @@ textarea.form-control-lg {
   }
 }
 .btn:hover {
-  color: #212529;
+  color: green;
 }
 .btn-check:focus + .btn, .btn:focus {
   outline: 0;
@@ -3043,7 +3057,7 @@ textarea.form-control-lg {
   border-color: #0dcaf0;
 }
 .btn-info:hover {
-  color: #000;
+  color: green;
   background-color: #31d2f2;
   border-color: #25cff2;
 }
@@ -3267,7 +3281,7 @@ textarea.form-control-lg {
   border-color: #0dcaf0;
 }
 .btn-outline-info:hover {
-  color: #000;
+  color:green;
   background-color: #0dcaf0;
   border-color: #0dcaf0;
 }
@@ -3342,7 +3356,7 @@ textarea.form-control-lg {
   border-color: #f8f9fa;
 }
 .btn-outline-light:hover {
-  color: #000;
+  color:green;
   background-color: #f8f9fa;
   border-color: #f8f9fa;
 }
@@ -3364,11 +3378,11 @@ textarea.form-control-lg {
 
 .btn-outline-dark {
   color: #212529;
-  border-color: #212529;
+  border-color: red;
 }
 .btn-outline-dark:hover {
   color: #fff;
-  background-color: #212529;
+  background-color:green;
   border-color: #212529;
 }
 .btn-check:focus + .btn-outline-dark, .btn-outline-dark:focus {
@@ -3445,44 +3459,10 @@ textarea.form-control-lg {
   position: relative;
 }
 
-.dropdown-toggle {
   white-space: nowrap;
 }
-.dropdown-toggle::after {
-  display: inline-block;
-  margin-left: 0.255em;
-  vertical-align: 0.255em;
-  content: "";
-  border-top: 0.3em solid;
-  border-right: 0.3em solid transparent;
-  border-bottom: 0;
-  border-left: 0.3em solid transparent;
-}
-.dropdown-toggle:empty::after {
-  margin-left: 0;
-}
 
-.dropdown-menu {
-  position: absolute;
-  z-index: 1000;
-  display: none;
-  min-width: 10rem;
-  padding: 0.5rem 0;
-  margin: 0;
-  font-size: 1rem;
-  color: #212529;
-  text-align: left;
-  list-style: none;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 0.25rem;
-}
-.dropdown-menu[data-bs-popper] {
-  top: 100%;
-  left: 0;
-  margin-top: 0.125rem;
-}
+
 
 .dropdown-menu-start {
   --bs-position: start;
@@ -3668,19 +3648,7 @@ textarea.form-control-lg {
   border-top: 1px solid rgba(0, 0, 0, 0.15);
 }
 
-.dropdown-item {
-  display: block;
-  width: 100%;
-  padding: 0.25rem 1rem;
-  clear: both;
-  font-weight: 400;
-  color: #212529;
-  text-align: inherit;
-  text-decoration: none;
-  white-space: nowrap;
-  background-color: transparent;
-  border: 0;
-}
+
 .dropdown-item:hover, .dropdown-item:focus {
   color: #1e2125;
   background-color: #e9ecef;
