@@ -65,6 +65,19 @@ body {
   background-attachment: fixed;
 }
 
+.footer{
+  background-color: black;
+  width: 100%;
+  height: fit-content;
+  margin: 0 0 0 0;
+}
+
+.footer-para{
+  color: white;
+  text-align: center;
+
+}
+
 .content{
   width: 75%;
   height: 100%;
