@@ -6,3 +6,45 @@
 // This file is intentionally blank
 // Use this file to add JavaScript to your project
 
+//slideshow
+var slideIndex = 0;
+showSlides();
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for(i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if(slideIndex > slides.length) {
+    slideIndex = 1
+  }
+  slides[slideIndex - 1].style.display = "block";
+  setTimeout(showSlides, 5000); // Change image every 2 seconds
+}
+
+// percentage bar
+
+/* var bill=40000;
+var amount=document.poster_1.value.amount;
+var per=((amount/bill)*100);*/
+
+var i = 0;
+function move() {
+  if (i == 0) {
+    i = 1;
+    var elem = document.getElementById("myBar");
+    var width = 0;
+    var id = setInterval(frame, 0);
+    function frame() {
+      if (width >= 100) {
+        clearInterval(id);
+        i = 0;
+      } else {
+        width++;
+        elem.style.width = width + "%";
+        elem.innerHTML = width  + "%";
+      }
+    }
+  }
+}

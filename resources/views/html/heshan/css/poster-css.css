@@ -187,6 +187,22 @@ img {
     opacity: 1
   }
 }
+
+/* css of percentage bar */
+#myProgress {
+  width: 100%;
+  background-color: #ddd;
+}
+
+#myBar {
+  width: 0%;
+  height: 30px;
+  background-color: #04AA6D;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+}
+
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev,
