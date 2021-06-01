@@ -192,6 +192,7 @@ img {
 #myProgress {
   width: 100%;
   background-color: #ddd;
+  border: rgb(34, 238, 34) solid 2px;
 }
 
 #myBar {
