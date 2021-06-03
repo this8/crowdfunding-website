@@ -1,14 +1,12 @@
 body {
-  background-image: url("doctor.png");
-  background-size: cover;
-  background-position: center;
+  background-image: url("doctor.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 100%;
+  background-size: cover;
 }
 
 #ui {
-  background-color: rgb(211, 71, 16);
+  background-color: rgb(16, 211, 178);
   padding: 30px;
   margin-top: 50px;
   border-radius: 20px;
