@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poster-page</title>
+
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Core theme CSS -->
+    <link href="css/poster-css.css" rel="stylesheet" />
+    
+</head>
+<body>
+    <!-- Nav bar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #c1e0f7;">
+        <a class="navbar-brand" href="#">Crowdfounding web</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Categery
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Heart</a>
+                <a class="dropdown-item" href="#">Cancer</a>
+                <a class="dropdown-item" href="#">Vision Problem</a>
+                <a class="dropdown-item" href="#">infants</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ route('login') }}">Log in</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ route('register') }}">Register</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search Patient</button>
+          </form>
+        </div>
+      </nav>
+
+    
+    
+    <!-- Posters section-->
+    
+    <div class="raw">
+
+
+    <div class="col1">
+
+    <section class="py-5">
+        <div class="container px-4 px-lg-5 my-5">
+            <div class="row gx-4 gx-lg-5 align-items-center">
+                <div class="col-md-6">
+                    <div class="slideshow-container">
+                        <div class="mySlides fade">
+                          <div class="numbertext">1 / 3</div>
+                          <img class="card-img-top mb-5 mb-md-0" src="https://dummyimage.com/600x700/dee2e6/6c757d.jpg" alt="..." />
+                          <div class="text">London, Ebgland</div>
+                        </div>
+                        <div class="mySlides fade">
+                          <div class="numbertext">2 / 3</div>
+                          <img class="card-img-top mb-5 mb-md-0" src="https://dummyimage.com/600x700/dee2e6/6c757d.jpg" alt="..." />
+                          <div class="text">Sunset in Romania</div>
+                        </div>
+                        <div class="mySlides fade">
+                          <div class="numbertext">3 / 3</div>
+                          <img class="card-img-top mb-5 mb-md-0" src="https://dummyimage.com/600x700/dee2e6/6c757d.jpg" alt="..." />
+                          <div class="text">New York, USA</div>
+                        </div>
+                        <a class="prevb" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="nextb" onclick="plusSlides(1)">&#10095;</a>
+                      </div>
+                      <br>
+                      <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                      </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="small mb-1">Reg-no: BST-498</div>
+                    <h1 class="display-5 fw-bolder">Patien-name</h1>
+                    <div class="fs-5 mb-5">
+                        <span class="text-decoration-line-through">Rs:45.00</span>
+                        <span>Rs:400000.00</span>
+                    </div>
+                    <p class="lead">(Short description)Lorem ipsum dolor sit amet consectetur. Praesentium at modi. Nam sequi consequatur obcaecati excepturi alias magni, accusamus eius blanditiis delectus ipsam minima ea iste laborum vero?</p>
+
+                    <div id="myProgress">
+                        <div id="myBar">0%</div>
+                      </div>
+                      <br>
+                    <div class="d-flex">
+                        <form name="poster_1" method="GET">
+                            <table>
+                                <tr>
+                                    <td><input class="form-control text-center me-3" name="amount" id="inputQuantity" type="number" style="max-width: 8rem" /></td>
+                                    <td> <button class="btn btn-outline-dark flex-shrink-0" type="button" onclick="move();"> Donate Now </button></td>
+                           
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <section class="py-5">
+        <div class="container px-4 px-lg-5 my-5">
+            <div class="row gx-4 gx-lg-5 align-items-center">
+                <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="https://dummyimage.com/600x700/dee2e6/6c757d.jpg" alt="..." /></div>
+                    
+                <div class="col-md-6">
+                    <div class="small mb-1">Reg-no: BST-498</div>
+                    <h1 class="display-5 fw-bolder">Patien-name</h1>
+                    <div class="fs-5 mb-5">
+                        <span class="text-decoration-line-through">Rs:45.00</span>
+                        <span>Rs:40.00</span>
+                    </div>
+                    <p class="lead">(Short description)Lorem ipsum dolor sit amet consectetur. Praesentium at modi. Nam sequi consequatur obcaecati excepturi alias magni, accusamus eius blanditiis delectus ipsam minima ea iste laborum vero?</p>
+                    <div class="w3-light-grey">
+                      <div id="myBar" class="w3-container w3-green w3-center" style="width:20%">20%</div>
+                    </div>
+                    <div class="d-flex">
+                        <input class="form-control text-center me-3" id="inputQuantity" type="num" value="Rs:" style="max-width: 8rem" />
+                        <button class="btn btn-outline-dark flex-shrink-0" type="button" onclick="move()">
+                            Donate Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container px-4 px-lg-5 my-5">
+            <div class="row gx-4 gx-lg-5 align-items-center">
+                <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="https://dummyimage.com/600x700/dee2e6/6c757d.jpg" alt="..." /></div>
+                <div class="col-md-6">
+                    <div class="small mb-1">Reg-no: BST-498</div>
+                    <h1 class="display-5 fw-bolder">Patien-name</h1>
+                    <div class="fs-5 mb-5">
+                        <span class="text-decoration-line-through">Rs:45.00</span>
+                        <span>Rs:40.00</span>
+                    </div>
+                    <p class="lead">(Short description)Lorem ipsum dolor sit amet consectetur. Praesentium at modi. Nam sequi consequatur obcaecati excepturi alias magni, accusamus eius blanditiis delectus ipsam minima ea iste laborum vero?</p>
+                    <div class="d-flex">
+                        <input class="form-control text-center me-3" id="inputQuantity" type="num" value="Rs:" style="max-width: 8rem" />
+                        <button class="btn btn-outline-dark flex-shrink-0" type="button">
+                            Donate Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container px-4 px-lg-5 my-5">
+            <div class="row gx-4 gx-lg-5 align-items-center">
+                <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="https://dummyimage.com/600x700/dee2e6/6c757d.jpg" alt="..." /></div>
+                <div class="col-md-6">
+                    <div class="small mb-1">Reg-no: BST-498</div>
+                    <h1 class="display-5 fw-bolder">Patien-name</h1>
+                    <div class="fs-5 mb-5">
+                        <span class="text-decoration-line-through">Rs:45.00</span>
+                        <span>Rs:40.00</span>
+                    </div>
+                    <p class="lead">(Short description)Lorem ipsum dolor sit amet consectetur. Praesentium at modi. Nam sequi consequatur obcaecati excepturi alias magni, accusamus eius blanditiis delectus ipsam minima ea iste laborum vero?</p>
+                    <div class="d-flex">
+                        <input class="form-control text-center me-3" id="inputQuantity" type="num" value="Rs:" style="max-width: 8rem" />
+                        <button class="btn btn-outline-dark flex-shrink-0" type="button">
+                            Donate Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container px-4 px-lg-5 my-5">
+            <div class="row gx-4 gx-lg-5 align-items-center">
+                <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="https://dummyimage.com/600x700/dee2e6/6c757d.jpg" alt="..." /></div>
+                <div class="col-md-6">
+                    <div class="small mb-1">Reg-no: BST-498</div>
+                    <h1 class="display-5 fw-bolder">Patien-name</h1>
+                    <div class="fs-5 mb-5">
+                        <span class="text-decoration-line-through">Rs:45.00</span>
+                        <span>Rs:40.00</span>
+                    </div>
+                    <p class="lead">(Short description)Lorem ipsum dolor sit amet consectetur. Praesentium at modi. Nam sequi consequatur obcaecati excepturi alias magni, accusamus eius blanditiis delectus ipsam minima ea iste laborum vero?</p>
+                    <div class="d-flex">
+                        <input class="form-control text-center me-3" id="inputQuantity" type="num" value="Rs:" style="max-width: 8rem" />
+                        <button class="btn btn-outline-dark flex-shrink-0" type="button">
+                            Donate Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+       
+    </div>
+
+    <div class="col2">
+
+        <div class="add" id="height1">
+            <p> This area for emergency tele numbers (Add image) </p>
+        </div>
+
+        <div class="add" id="height2" style="margin-top: 6%;">
+            <p> This area for emergency tele numbers (Add image) </p>
+        </div>
+
+        
+    </div>
+
+</div>
+   
+    <script src="/js/scripts.js"> </script>
+
+
+
+<!-- footer -->
+<footer>
+
+    <div class="footer">
+        <p class="footer-para"> Wefund web site &copy; NSBM</p>
+    </div>
+    
+</footer>
+    
+</body>
+</html>
