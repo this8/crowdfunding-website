@@ -83,3 +83,25 @@ profile-side p{
     font-family:cursive;
     font-weight: bold;
 }
+.profile-body{
+    width: 100%;
+
+    text-align: justify;
+
+}
+.profile-body h1{
+    color: rgb(5, 48, 18);
+    text-align: center;
+
+
+}
+.profile-post-tab{
+    text-align: center;
+    color: red;
+}
+.profile-body p{
+    text-align: center;
+    color: rgb(12, 10, 14);
+    font-weight: bold;
+    font-size: large;
+}
