@@ -1,3 +1,14 @@
+
+.body
+{   background-image: url(medi.jpg);
+    background-size:cover;
+   
+}
+.background{
+    background:linear-gradient(to right,white,rgb(211, 54, 26));
+    height: 900px;
+    opacity: 0.8;
+}
 .profile-header{
     background: #898cb8 ;
     width: 100%;
