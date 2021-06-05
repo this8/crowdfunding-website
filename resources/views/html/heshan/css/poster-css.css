@@ -65,10 +65,46 @@ body {
   background-attachment: fixed;
 }
 
+/* body format */
+*{
+  box-sizing: border-box;
+}
+.raw{
+  border: black 2px solid;
+  display: flex;
+}
+.col1{
+  float: left;
+  width: 75%;
+  padding: 10px;
+  height: 80%;
+}
+.col2{
+  float: left;
+  width: 24%;
+  padding: 10px;
+  max-height: none;
+  border: black 2px solid;
+  margin: 4% 0% 4% 0%;
+}
+#height1{
+  height: 49.5%;
+}
+#height2{
+  height: 49.5%;
+}
+.add{
+  float: left;
+  border: black 2px solid;
+  max-height: none;
+  text-align: center;
+}
+
 .footer{
   background-color: black;
   width: 100%;
   height: fit-content;
+  position: absolute;
   margin: 0 0 0 0;
 }
 
@@ -192,6 +228,7 @@ img {
 #myProgress {
   width: 100%;
   background-color: #ddd;
+  border: rgb(34, 238, 34) solid 2px;
 }
 
 #myBar {

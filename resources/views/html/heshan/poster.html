@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- Core theme CSS -->
     <link href="css/poster-css.css" rel="stylesheet" />
-    <script src="/js/scripts.js"></script>
+    
 </head>
 <body>
     <!-- Nav bar-->
@@ -62,7 +62,11 @@
     
     <!-- Posters section-->
     
-   
+    <div class="raw">
+
+
+    <div class="col1">
+
     <section class="py-5">
         <div class="container px-4 px-lg-5 my-5">
             <div class="row gx-4 gx-lg-5 align-items-center">
@@ -110,8 +114,8 @@
                         <form name="poster_1" method="GET">
                             <table>
                                 <tr>
-                                    <td><input class="form-control text-center me-3" name="amount" id="inputQuantity" type="num" style="max-width: 8rem" /></td>
-                                    <td> <button class="btn btn-outline-dark flex-shrink-0" type="submit" onclick="move();">  Donate Now</button></td>
+                                    <td><input class="form-control text-center me-3" name="amount" id="inputQuantity" type="number" style="max-width: 8rem" /></td>
+                                    <td> <button class="btn btn-outline-dark flex-shrink-0" type="button" onclick="move();"> Donate Now </button></td>
                            
                                 </tr>
                             </table>
@@ -128,6 +132,7 @@
         <div class="container px-4 px-lg-5 my-5">
             <div class="row gx-4 gx-lg-5 align-items-center">
                 <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="https://dummyimage.com/600x700/dee2e6/6c757d.jpg" alt="..." /></div>
+                    
                 <div class="col-md-6">
                     <div class="small mb-1">Reg-no: BST-498</div>
                     <h1 class="display-5 fw-bolder">Patien-name</h1>
@@ -136,9 +141,12 @@
                         <span>Rs:40.00</span>
                     </div>
                     <p class="lead">(Short description)Lorem ipsum dolor sit amet consectetur. Praesentium at modi. Nam sequi consequatur obcaecati excepturi alias magni, accusamus eius blanditiis delectus ipsam minima ea iste laborum vero?</p>
+                    <div class="w3-light-grey">
+                      <div id="myBar" class="w3-container w3-green w3-center" style="width:20%">20%</div>
+                    </div>
                     <div class="d-flex">
                         <input class="form-control text-center me-3" id="inputQuantity" type="num" value="Rs:" style="max-width: 8rem" />
-                        <button class="btn btn-outline-dark flex-shrink-0" type="button">
+                        <button class="btn btn-outline-dark flex-shrink-0" type="button" onclick="move()">
                             Donate Now
                         </button>
                     </div>
@@ -215,10 +223,26 @@
             </div>
         </div>
     </section>
+
        
-    
+    </div>
+
+    <div class="col2">
+
+        <div class="add" id="height1">
+            <p> This area for emergency tele numbers (Add image) </p>
+        </div>
+
+        <div class="add" id="height2" style="margin-top: 6%;">
+            <p> This area for emergency tele numbers (Add image) </p>
+        </div>
+
+        
+    </div>
+
+</div>
    
-    <script src="/js/scripts.js"></script>
+    <script src="/js/scripts.js"> </script>
 
 
 

@@ -29,22 +29,17 @@ function showSlides() {
 var amount=document.poster_1.value.amount;
 var per=((amount/bill)*100);*/
 
-var i = 0;
 function move() {
-  if (i == 0) {
-    i = 1;
-    var elem = document.getElementById("myBar");
-    var width = 0;
-    var id = setInterval(frame, 0);
-    function frame() {
-      if (width >= 100) {
-        clearInterval(id);
-        i = 0;
-      } else {
-        width++;
-        elem.style.width = width + "%";
-        elem.innerHTML = width  + "%";
-      }
+  var elem = document.getElementById("myBar");   
+  var width = 20;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (width >= 100) {
+      clearInterval(id);
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+      elem.innerHTML = width * 1  + '%';
     }
   }
 }
