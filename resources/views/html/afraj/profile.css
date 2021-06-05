@@ -45,5 +45,41 @@ color: rgb(36, 5, 5);
     color: rgb(22, 4, 4);
 }
 .profile-nav-info .address p{
+    margin-right:5px;
+}
+.main-bd{
+    width: 50%;
+    display: flex;
+    padding-right: 15px;
+    flex-direction: column;
+    padding-right: opx;
+
+}
+.mobile-no i{
+    transform:rotateY(180deg);
+}
+.profile-side{
+    width: 50%;
+    background: rgb(255, 180, 215) ;
+    box-shadow: 0px 3px 5px rgba(0,0,0,.2);
+    padding: 50px 30px 20px ;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-right: 5px;
+    z-index: 50;
+    text-align: center justify;
+    
+
+}
+profile-side p{
+    margin-bottom: 7px;
+    color: rgb(240, 227, 227);
+    font-size: 14px;
+    text-align: center;
+
+}
+.profile-side p i{
+    color: var(--color);
+    margin-right: 5px;
+    font-family:cursive;
+    font-weight: bold;
 }
