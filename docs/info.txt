@@ -14,3 +14,18 @@ Homestead.json
 Homestead.yaml
 npm-debug.log
 yarn-error.log
+
+
+Web pages
+
+replace these pages;
+Web.balade.php => Landing-pages
+login and register is completed
+home.blade.php => landing-page
+
+create new pages for;
+poster-page.blade.php for each section
+profile.blade.php
+donate.blade.php
+about-us.blade.php
+create-post.blade.php
