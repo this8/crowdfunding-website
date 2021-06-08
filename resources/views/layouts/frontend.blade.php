@@ -16,15 +16,14 @@
     
     
     
-    
-    
     <script type="application/ld+json">{
 		"@context": "http://schema.org",
 		"@type": "Organization",
 		"name": "",
 		"url": "index.html",
 		"logo": "images/default-logo.png"
-}</script>
+    }
+    </script>
     <meta property="og:title" content="Psters page">
     <meta property="og:type" content="website">
     <meta name="theme-color" content="#478ac9">
@@ -34,6 +33,7 @@
   <body class="u-body"><header class="u-clearfix u-header u-header" id="sec-371a"><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
          <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href={{asset("css/creatingPost.css")}}>
 
     <title>Web Assignment</title>
   </head>
@@ -72,7 +72,7 @@
               <a class="nav-link" href="{{ route('register') }}">Register</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Create post</a>
+              <a class="nav-link" href="posts/create">Create post</a>
             </li>
           </ul>
           
