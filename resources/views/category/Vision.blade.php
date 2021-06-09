@@ -2,7 +2,7 @@
 @section('content')
 
 <!-- Posters section-->
-    <h1> Heart </h2>
+<h1> Vision </h1>
 <div class="raw">
         <div class="col2">
 
