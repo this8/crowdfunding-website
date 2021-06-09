@@ -33,7 +33,7 @@
   <body class="u-body"><header class="u-clearfix u-header u-header" id="sec-371a"><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
          <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href={{asset("css/creatingPost.css")}}>
+   
 
     <title>Web Assignment</title>
   </head>
@@ -65,12 +65,7 @@
             <li class="nav-item">
               <a class="nav-link" href="#">About us</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{{ route('login') }}">Log in</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{{ route('register') }}">Register</a>
-            </li>
+            
             <li class="nav-item">
               <a class="nav-link" href="posts/create">Create post</a>
             </li>
