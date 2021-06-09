@@ -25,13 +25,5 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 
-<<<<<<< HEAD
-
-Auth::routes();
-
-
-
 Route::get('/Heart',[App\Http\Controllers\PagesController::class, 'index'])->name('Heart');
 
-=======
->>>>>>> Main
