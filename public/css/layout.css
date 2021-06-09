@@ -1,0 +1,13 @@
+.footer{
+    background-color: black;
+    width: 100%;
+    height: fit-content;
+    position: absolute;
+    margin: 0 0 0 0;
+  }
+  
+  .footer-para{
+    color: white;
+    text-align: center;
+  
+  }
