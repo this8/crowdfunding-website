@@ -1,5 +1,5 @@
 body {
-    background-image: url("images/doctor.jpg");
+    background-image: url("images/poster/doc.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -10,7 +10,7 @@ body {
     padding: 30px;
     margin-top: 50px;
     border-radius: 20px;
-    opacity: 0.9;
+    opacity: 0.8;
 }
 
 #ui label,
@@ -28,7 +28,7 @@ h1 {
 
 .uploadFile {
     position: absolute;
-    right: 50px;
+    right: 100px;
     cursor: pointer;
     opacity: 0;
 }
