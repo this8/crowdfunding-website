@@ -28,7 +28,7 @@ h1 {
 
 .uploadFile {
     position: absolute;
-    right: 100px;
+    right: 70px;
     cursor: pointer;
     opacity: 0;
 }

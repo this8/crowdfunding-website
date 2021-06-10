@@ -145,10 +145,10 @@
                 Create Post
               </a>
               <div class="dropdown-menu" aria-labelledby="createPostDropdown">
-                <a class="dropdown-item" href="#">Heart</a>
-                <a class="dropdown-item" href="#">Cancer</a>
-                <a class="dropdown-item" href="#">Vision Problem</a>
-                <a class="dropdown-item" href="#">infants</a>
+                <a class="dropdown-item" href="posts/create">Heart</a>
+                <a class="dropdown-item" href="posts/create">Cancer</a>
+                <a class="dropdown-item" href="posts/create">Vision Problem</a>
+                <a class="dropdown-item" href="posts/create">infants</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#">Others...</a>
               </div>
