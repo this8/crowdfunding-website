@@ -28,8 +28,8 @@
 
       <div class="col-lg-6">
         <div id="ui">
-          <form class="form-group text-center" name="fmCreatingPost">
-
+          <form class="form-group text-center" name="fmCreatingPost" method="POST" action="{{ route('post') }}" enctype="multipart/form-data"
+          @csrf
             <h1 class="text-center">Creating Post</h1>
             <div class="row">
 
@@ -56,7 +56,7 @@
               <div class="col-lg-12">
                 <br>
                 <label>Phone number</label>
-                <input type="text" name="PhoneNumber" class="form-control" placeholder="Enter your phone number..">
+                <input type="text" name="phoneNumber" class="form-control" placeholder="Enter your phone number..">
 
                 <br>
               </div>
@@ -90,7 +90,7 @@
 
 
               <div class="inputUpload">
-                <label for="file-ip" class="fileLabel">upload patient picture</label>
+                <label for="file-ip" name="patient_pic" class="fileLabel">upload patient picture</label>
 
                 <input type="file" class="uploadFile" accept="image/*">
 
@@ -103,7 +103,9 @@
               </div>
 
             </div>
-            <input type="button" name="submit" value="submit" class="btn btn-primary btn-block" onclick="validate()">
+            <input type="submit" name="submit" value="submit" class="btn btn-primary btn-block">
+            <input type="reset" name="reset" value="reset" class="btn btn-primary btn-block">
+          
           </form>
         </div>
       </div>

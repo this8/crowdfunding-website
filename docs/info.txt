@@ -29,3 +29,7 @@ profile.blade.php
 donate.blade.php
 about-us.blade.php
 create-post.blade.php
+
+
+
+Add Create post page to select disease type(4 buttons) and then directs to the relevant page/form.

@@ -32,6 +32,8 @@ Route::get('/Vision',[App\Http\Controllers\PagesController::class, 'Vision'])->n
 
 Route::get('/Infants',[App\Http\Controllers\PagesController::class, 'Infants'])->name('Infants');
 
+Route::post('/posts/store',[PostController::class,'store'])->name('post');
+
 
 
 
