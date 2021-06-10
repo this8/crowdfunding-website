@@ -17,19 +17,19 @@ class PostController extends Controller
     {
         return view('creatingPost');
     }
-
-    public function store(Request $request)
     
-        $post=new post([
+    public function store(Request $request){
+    
+        post::create([
             'user_id'=>auth()->user()->id,
             'category'=>$request->category,
             'first_name'=>$request->fname,
             'last_name'=>$request->lname,
             'phone_number'=>$request->phoneNumber,
             'address'=>$request->address,
-            'description'=>$request->
-            'e-mail'=>$request->email,
-            'donation_amount'=>$request->rqAmount
+            //'description'=>$request->
+            'email'=>$request->email,
+            'donation_amount'=>$request->rqAmount,
             'required_date'=>$request->date,
             'patient_picture'=>$request->patient_pic,
             'med_report_1'=>$request->report_1,
@@ -39,14 +39,16 @@ class PostController extends Controller
             'med_report_5'=>$request->report_5,
         ]);
 
-        $post->save();
+        // $post->save();
+         
+        return back('home');
         
+    
     }
-
 
     public function show(post $post)
     {
-        //
+        
     }
 
  

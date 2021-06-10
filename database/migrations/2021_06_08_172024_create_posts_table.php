@@ -22,7 +22,7 @@ class CreatePostsTable extends Migration
             $table->integer('phone_number');
             $table->string('address');
             $table->string('description');
-            $table->string('e-mail');
+            $table->string('email');
             $table->integer('donation_amount');
             $table->date('required_date');
             $table->string('patient_picture');

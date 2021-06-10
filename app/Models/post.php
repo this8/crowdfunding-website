@@ -16,7 +16,7 @@ class post extends Model
         'phone_number',
         'address',
         'description',
-        'e-mail',
+        'email',
         'donation_amount',
         'required_date',
         'patient_picture',
