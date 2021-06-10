@@ -127,7 +127,7 @@
                 <a class="dropdown-item" href="#">Vision Problem</a>
                 <a class="dropdown-item" href="#">infants</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
+                <a class="dropdown-item" href="#">Others...</a>
               </div>
             </li>
             <li class="nav-item">
@@ -140,8 +140,18 @@
             <li class="nav-item">
               <a class="nav-link" href="{{ route('register') }}">Register</a>
             </li> -->
-            <li class="nav-item">
-              <a class="nav-link" href="posts/create">Create post</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" id="createPostDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Create Post
+              </a>
+              <div class="dropdown-menu" aria-labelledby="createPostDropdown">
+                <a class="dropdown-item" href="posts/create">Heart</a>
+                <a class="dropdown-item" href="posts/create">Cancer</a>
+                <a class="dropdown-item" href="posts/create">Vision Problem</a>
+                <a class="dropdown-item" href="posts/create">infants</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Others...</a>
+              </div>
             </li>
           </ul>
           

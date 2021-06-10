@@ -9,7 +9,6 @@
     <title>Poters page</title>
     <link rel="stylesheet" href="{{ asset('css/layout.css') }}" media="screen">
     <link rel="stylesheet" href="{{ asset('css/poster-css.css') }}" media="screen">
-    <link rel="stylesheet" href="{{ asset('css/creatingPost.css') }}">
     <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
     <meta name="generator" content="Nicepage 3.11.0, nicepage.com">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
@@ -70,6 +69,8 @@
             <li class="nav-item">
               <a class="nav-link" href="posts/create">Create post</a>
             </li>
+
+
           </ul>
           
           <form class="form-inline my-2 my-lg-0">

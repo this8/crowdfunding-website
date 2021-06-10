@@ -32,17 +32,6 @@
           @csrf
             <h1 class="text-center">Creating Post</h1>
             <div class="row">
-              <div class="col-lg-12">
-                <label> Category </label>
-                <select class="form-control">
-                  <option>Category...</option>
-                  <option>Heart</option>
-                  <option>Cancer</option>
-                  <option>Vision Problem</option>
-                  <option>Infants</option>
-                  <option>Something else here</option>
-                </select>
-              </div>
 
               <br> <br>
               <div class="col-lg-6">
@@ -59,6 +48,13 @@
 
               <div class="col-lg-12">
                 <br>
+                <label>Description About patient</label>
+                <textarea class="form-control" cols="30" rows="4" name="address"></textarea>
+                <br>
+              </div>
+
+              <div class="col-lg-12">
+                <br>
                 <label>Phone number</label>
                 <input type="text" name="phoneNumber" class="form-control" placeholder="Enter your phone number..">
 
@@ -71,13 +67,13 @@
                 <br>
               </div>
 
-              <div class="col-lg-12">
+              {{-- <div class="col-lg-12">
 
                 <label>E-mail</label>
                 <input type="email" name="email" class="form-control" placeholder="Enter your email..">
 
                 <br>
-              </div>
+              </div> --}}
 
               <div class="col-lg-6">
                 <label>Required Donation Amount</label>
