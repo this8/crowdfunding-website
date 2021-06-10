@@ -3,15 +3,12 @@
 namespace App\Http\Controllers;
 
 use App\Models\post;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
 
-    public function index()
-    {
-        
-    }
 
     public function create()
     {
@@ -20,29 +17,54 @@ class PostController extends Controller
     
     public function store(Request $request){
     
-        post::create([
-            'user_id'=>auth()->user()->id,
-            'category'=>$request->category,
-            'first_name'=>$request->fname,
-            'last_name'=>$request->lname,
-            'phone_number'=>$request->phoneNumber,
-            'address'=>$request->address,
-            //'description'=>$request->
-            'email'=>$request->email,
-            'donation_amount'=>$request->rqAmount,
-            'required_date'=>$request->date,
-            'patient_picture'=>$request->patient_pic,
-            'med_report_1'=>$request->report_1,
-            'med_report_2'=>$request->report_2,
-            'med_report_3'=>$request->report_3,
-            'med_report_4'=>$request->report_4,
-            'med_report_5'=>$request->report_5,
-        ]);
 
-        // $post->save();
+        $patient=$request->file("patient_pic");
+        $repo=$request->file("med_repo");
+
+        $image_patient_name=time().'_'.$patient->getClientOriginalName();
+        $docu_repo_name=time().'_'.$repo->getClientOriginalName();
+
+        $patient->move(\public_path("patient-profile-pic/"),$image_patient_name);
+        $repo->move(\public_path("med-document/"),$docu_repo_name);
+
+        post::create([
+             // 'user_id'=>$user->id,
+             'first_name'=>$request->fname,
+             'last_name'=>$request->lname,
+             'description'=>$request->description,
+             'phone_number'=>$request->phoneNumber,
+             'address'=>$request->address,
+             'donation_amount'=>$request->rqAmount,
+             'required_date'=>$request->date,
+             'patient_picture'=>$image_patient_name,
+             'med_report'=>$docu_repo_name,
+        ]);
          
-        return back('home');
-        
+
+
+        // $patient=$request->file("patient_pic");
+        // $repo=$request->file("med_repo");
+
+        // $image_patient_name=time().'_'.$patient->getClientOriginalName();
+        // $docu_repo_name=time().'_'.$repo->getClientOriginalName();
+
+        // $patient->move(\public_path("patient-profile-pic/"),$image_patient_name);
+        // $repo->move(\public_path("med-document/"),$docu_repo_name);
+
+
+        //  $post = new post([
+        //     // 'user_id'=>$user->id,
+        //     'first_name'=>$request->fname,
+        //     'last_name'=>$request->lname,
+        //     'description'=>$request->description,
+        //     'phone_number'=>$request->phoneNumber,
+        //     'address'=>$request->address,
+        //     'donation_amount'=>$request->rqAmount,
+        //     'required_date'=>$request->date,
+        //     'patient_picture'=>$image_patient_name,
+        //     'med_report'=>$docu_repo_name,
+        // ]);
+        // $post->save();
     
     }
 
