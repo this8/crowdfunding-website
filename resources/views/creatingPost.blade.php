@@ -28,7 +28,7 @@
 
       <div class="col-lg-6">
         <div id="ui">
-          <form class="form-group text-center" name="fmCreatingPost">
+          <form class="form-group text-center" name="fmCreatingPost" action="post">
 
             <h1 class="text-center">Creating Post</h1>
             <div class="row">
@@ -60,7 +60,7 @@
               <div class="col-lg-12">
                 <br>
                 <label>Phone number</label>
-                <input type="text" name="PhoneNumber" class="form-control" placeholder="Enter your phone number..">
+                <input type="text" name="phoneNumber" class="form-control" placeholder="Enter your phone number..">
 
                 <br>
               </div>
