@@ -76,15 +76,14 @@ body {
 .col1{
   float: left;
   width: 60%;
-  padding: 10px 5px 0 5px;
+  padding: 0 2% 0 2%;
   height: 80%;
 }
 .col2{
   float: left;
   width: 20%;
-  padding: 10px;
   max-height: none;
-  margin: 4% 0% 4% 0%;
+  margin: 0 0% 4% 0%;
 }
 #height1{
   height: 49.5%;
@@ -701,7 +700,7 @@ progress {
 }
 
 .container,
-.container-fluid,
+.conainer-flutid,
 .container-xxl,
 .container-xl,
 .container-lg,
@@ -1255,8 +1254,6 @@ progress {
   }
 
   .col-md-6 {
-    width: 5%;
-    height: 5%;
     flex: 0 0 auto;
     width: 50%;
     background-size: cover;

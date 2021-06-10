@@ -2,7 +2,9 @@
 @section('content')
 
 <!-- Posters section-->
+<div class="alert alert-info" role="alert">
     <h1> Heart </h2>
+</div>
     
 <div class="raw">
         <div class="col2">

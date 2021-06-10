@@ -2,7 +2,10 @@
 @section('content')
 
 <!-- Posters section-->
-<h1> Cancer </h2>
+<div class="alert alert-info" role="alert">
+    <h1> Cancer </h2>
+</div>
+    
 <div class="raw">
         <div class="col2">
 
@@ -29,7 +32,7 @@
                 <div class="col-md-6">
                     <div class="small mb-1">Reg-no: BST-498</div>
                     <h1 class="display-5 fw-bolder">Patien-name</h1>
-                    <div class="fs-5 mb-5">
+                    <div class="fs-5 mb-3">
                         <span>Rs:400000.00</span>
                     </div>
                     <p> (Short description)Lorem ipsum dolor sit amet consectetur. Praesentium at modi. Nam sequi consequatur obcaecati excepturi alias magni, accusamus eius blanditiis delectus ipsam minima ea iste laborum vero?</p>
@@ -40,7 +43,7 @@
                       <br>
                     <div class="d-flex">
                         <form name="poster_1" method="GET">
-                            <table>
+                            <table class="mb-2">
                                 <tr>
                                     <td><input class="form-control text-center me-3" name="amount" id="inputQuantity" type="number"  style="max-width: 8rem" /></td>
                                     <td> <button class="btn btn-outline-dark flex-shrink-0" type="button" onclick="move();"> Donate Now </button></td>
@@ -59,29 +62,37 @@
     <section class="py-5">
         <div class="container px-4 px-lg-5 my-5">
             <div class="row gx-4 gx-lg-5 align-items-center">
-                <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="https://dummyimage.com/600x700/dee2e6/6c757d.jpg" alt="..." />
+                <div class="col-md-6">
+                    <img class="card-img-top mb-5 mb-md-0" src="https://dummyimage.com/600x700/dee2e6/6c757d.jpg" alt="..." />
                 </div>
-                    
                 <div class="col-md-6">
                     <div class="small mb-1">Reg-no: BST-498</div>
                     <h1 class="display-5 fw-bolder">Patien-name</h1>
-                    <div class="fs-5 mb-5">
-                        <span>Rs:40.00</span>
+                    <div class="fs-5 mb-3">
+                        <span>Rs:400000.00</span>
                     </div>
-                    <p>(Short description)Lorem ipsum dolor sit amet consectetur. Praesentium at modi. Nam sequi consequatur obcaecati excepturi alias magni, accusamus eius blanditiis delectus ipsam minima ea iste laborum vero?</p>
-                    <div class="w3-light-grey">
-                      <div id="myBar" class="w3-container w3-green w3-center" style="width:20%">20%</div>
-                    </div>
+                    <p> (Short description)Lorem ipsum dolor sit amet consectetur. Praesentium at modi. Nam sequi consequatur obcaecati excepturi alias magni, accusamus eius blanditiis delectus ipsam minima ea iste laborum vero?</p>
+
+                    <div id="myProgress">
+                        <div id="myBar">0%</div>
+                      </div>
+                      <br>
                     <div class="d-flex">
-                        <input class="form-control text-center me-3" id="inputQuantity" type="number"  style="max-width: 8rem" />
-                        <button class="btn btn-outline-dark flex-shrink-0" type="button" onclick="move()">
-                            Donate Now
-                        </button>
+                        <form name="poster_1" method="GET">
+                            <table class="mb-2">
+                                <tr>
+                                    <td><input class="form-control text-center me-3" name="amount" id="inputQuantity" type="number"  style="max-width: 8rem" /></td>
+                                    <td> <button class="btn btn-outline-dark flex-shrink-0" type="button" onclick="move();"> Donate Now </button></td>
+                           
+                                </tr>
+                            </table>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
 
     <section class="py-5">
         <div class="container px-4 px-lg-5 my-5">
