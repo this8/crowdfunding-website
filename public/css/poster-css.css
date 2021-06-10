@@ -68,15 +68,15 @@ body {
 /* body format */
 *{
   box-sizing: border-box;
+ 
 }
 .raw{
-  border: black 2px solid;
   display: flex;
 }
 .col1{
   float: left;
   width: 60%;
-  padding: 10px;
+  padding: 10px 5px 0 5px;
   height: 80%;
 }
 .col2{
@@ -84,7 +84,6 @@ body {
   width: 20%;
   padding: 10px;
   max-height: none;
-  border: black 2px solid;
   margin: 4% 0% 4% 0%;
 }
 #height1{
@@ -143,6 +142,7 @@ body {
   width: 100%;
   background-color: #ddd;
   border: rgb(34, 238, 34) solid 2px;
+  border-radius: 25px;
 }
 
 #myBar {
@@ -152,6 +152,7 @@ body {
   text-align: center;
   line-height: 30px;
   color: white;
+
 }
 
 /* On smaller screens, decrease text size */
@@ -708,13 +709,16 @@ progress {
 .container-sm {
   width: 100%;
   max-height: 40%;
-  padding-right: 1px;
-  padding-left: 1px;
-  margin-right: 1px;
-  margin-left: 1px;
-  border:#000 2px solid;
+  padding-right: 4px;
+  padding-left: 4px;
+  margin-right: 4px;
+  margin-left: 4px;
+  border:#000 1px solid;
   box-shadow: 5px 10px #888888;
+  border-radius: 25px;
 }
+.container:hover {
+  transform: scale(1.2); 
 
 @media (min-width: 576px) {
   .container-sm, .container {
@@ -4421,15 +4425,16 @@ textarea.form-control-lg {
 .card-img,
 .card-img-top,
 .card-img-bottom {
-  width: 100%;
+  max-width: 70%;
+  padding: 1% 1% 1% 1%;
 }
 
 .card-img,
 .card-img-top {
   border-top-left-radius: calc(0.25rem - 1px);
   border-top-right-radius: calc(0.25rem - 1px);
-  width: 70%;
-  height: 70%;
+  width: 50%;
+  height: 50%;
 }
 
 .card-img,
