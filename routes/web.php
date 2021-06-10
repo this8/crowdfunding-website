@@ -24,6 +24,15 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-
 Route::get('/Heart',[App\Http\Controllers\PagesController::class, 'index'])->name('Heart');
+
+Route::get('/Cancer',[App\Http\Controllers\PagesController::class, 'Cancer'])->name('Cancer');
+
+Route::get('/Vision',[App\Http\Controllers\PagesController::class, 'Vision'])->name('Vision');
+
+Route::get('/Infants',[App\Http\Controllers\PagesController::class, 'Infants'])->name('Infants');
+
+
+
+
 

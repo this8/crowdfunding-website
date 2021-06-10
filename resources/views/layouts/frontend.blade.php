@@ -9,6 +9,7 @@
     <title>Poters page</title>
     <link rel="stylesheet" href="{{ asset('css/layout.css') }}" media="screen">
     <link rel="stylesheet" href="{{ asset('css/poster-css.css') }}" media="screen">
+    <link rel="stylesheet" href="{{ asset('css/creatingPost.css') }}">
     <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
     <meta name="generator" content="Nicepage 3.11.0, nicepage.com">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
@@ -33,7 +34,7 @@
   <body class="u-body"><header class="u-clearfix u-header u-header" id="sec-371a"><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
          <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href={{asset("css/creatingPost.css")}}>
+   
 
     <title>Web Assignment</title>
   </head>
@@ -65,12 +66,7 @@
             <li class="nav-item">
               <a class="nav-link" href="#">About us</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{{ route('login') }}">Log in</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{{ route('register') }}">Register</a>
-            </li>
+            
             <li class="nav-item">
               <a class="nav-link" href="posts/create">Create post</a>
             </li>
