@@ -17,6 +17,9 @@
 
 <body>
 
+  {{-- including navbar --}}
+  @include('navbar')
+
 
   <!-- creating post -->
 
@@ -28,7 +31,7 @@
 
       <div class="col-lg-6">
         <div id="ui">
-          <form class="form-group text-center" name="fmCreatingPost" method="POST" action="{{ route('post') }}" enctype="multipart/form-data"
+          <form class="form-group text-center" name="fmCreatingPost" method="POST" action="posts" enctype="multipart/form-data"
           @csrf
             <h1 class="text-center">Creating Post</h1>
             <div class="row">
