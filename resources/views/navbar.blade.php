@@ -37,12 +37,12 @@
           Create Post
         </a>
         <div class="dropdown-menu" aria-labelledby="createPostDropdown">
-          <a class="dropdown-item" href="posts/create">Heart</a>
-          <a class="dropdown-item" href="posts/create">Cancer</a>
-          <a class="dropdown-item" href="posts/create">Vision Problem</a>
-          <a class="dropdown-item" href="posts/create">infants</a>
+          <a class="dropdown-item" href="hert/create">Heart</a>
+          <a class="dropdown-item" href="notyet">Cancer</a>
+          <a class="dropdown-item" href="notyet">Vision Problem</a>
+          <a class="dropdown-item" href="notyet">infants</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Others...</a>
+          <a class="dropdown-item" href="notyet">Others...</a>
         </div>
       </li>
     </ul>
