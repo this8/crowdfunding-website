@@ -33,6 +33,18 @@ h1 {
     opacity: 0;
 }
 
+.long_button {
+    border-radius: 100px;
+}
+
+.round_input {
+    border-radius: 100px;
+}
+
+.round_textarea {
+    border-radius: 30px;
+}
+
 @media screen and (max-width: 3000px) {
     .fileLabel {
         position: relative;
@@ -50,7 +62,7 @@ h1 {
         font-size: 16px;
         line-height: 60px;
         padding: 0 15px;
-        border-radius: 0 5px 5px 0;
+        border-radius: 100px;
     }
 }
 
@@ -71,7 +83,7 @@ h1 {
         font-size: 16px;
         line-height: 60px;
         padding: 0 15px;
-        border-radius: 0 5px 5px 0;
+        border-radius: 100px;
     }
 }
 
@@ -92,7 +104,7 @@ h1 {
         font-size: 16px;
         line-height: 60px;
         padding: 0 15px;
-        border-radius: 0 5px 5px 0;
+        border-radius: 100px;
     }
 }
 
@@ -113,7 +125,7 @@ h1 {
         font-size: 16px;
         line-height: 60px;
         padding: 0 15px;
-        border-radius: 0 5px 5px 0;
+        border-radius: 100px;
     }
 }
 
@@ -134,7 +146,7 @@ h1 {
         font-size: 16px;
         line-height: 60px;
         padding: 0 15px;
-        border-radius: 0 5px 5px 0;
+        border-radius: 100px;
     }
 }
 
@@ -155,7 +167,7 @@ h1 {
         font-size: 16px;
         line-height: 60px;
         padding: 0 15px;
-        border-radius: 0 5px 5px 0;
+        border-radius: 100px;
     }
 }
 
@@ -176,7 +188,7 @@ h1 {
         font-size: 16px;
         line-height: 60px;
         padding: 0 15px;
-        border-radius: 0 5px 5px 0;
+        border-radius: 100px;
     }
 }
 
@@ -197,7 +209,7 @@ h1 {
         font-size: 16px;
         line-height: 60px;
         padding: 0 15px;
-        border-radius: 0 5px 5px 0;
+        border-radius: 100px;
     }
 }
 @media screen and (max-width: 366px) {
@@ -217,6 +229,6 @@ h1 {
         font-size: 16px;
         line-height: 60px;
         padding: 0 15px;
-        border-radius: 0 5px 5px 0;
+        border-radius: 100px;
     }
 }

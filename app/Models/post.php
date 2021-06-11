@@ -10,8 +10,8 @@ class post extends Model
     use HasFactory;
     protected $fillable=[
         // 'user_id',
-        'first_name',
-        'last_name',
+        // 'first_name',
+        // 'last_name',
         'phone_number',
         'description',
         'address',
@@ -19,5 +19,6 @@ class post extends Model
         'required_date',
         'patient_picture',
         'med_report',
+
     ];
 }

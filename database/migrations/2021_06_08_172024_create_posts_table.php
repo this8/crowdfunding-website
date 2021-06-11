@@ -16,8 +16,8 @@ class CreatePostsTable extends Migration
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
             // $table->unsignedBigInteger('user_id');
-            $table->string('first_name');
-            $table->string('last_name');
+            // $table->string('first_name');
+            // $table->string('last_name');
             $table->integer('phone_number');
             $table->string('description');
             $table->string('address');
@@ -26,6 +26,7 @@ class CreatePostsTable extends Migration
             $table->date('required_date');
             $table->string('patient_picture');
             $table->string('med_report');
+
             $table->timestamps();
             // $table->foreign('user_id')->references('id')->on('users');
         });

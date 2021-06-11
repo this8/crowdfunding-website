@@ -19,18 +19,23 @@ class PostController extends Controller
     
 
         $patient=$request->file("patient_pic");
+
         $repo=$request->file("med_repo");
 
         $image_patient_name=time().'_'.$patient->getClientOriginalName();
+        
         $docu_repo_name=time().'_'.$repo->getClientOriginalName();
 
+
         $patient->move(\public_path("patient-profile-pic/"),$image_patient_name);
-        $repo->move(\public_path("med-document/"),$docu_repo_name);
+        $repo->move(\public_path("med-document"),$docu_repo_name);
+
 
         post::create([
              // 'user_id'=>$user->id,
-             'first_name'=>$request->fname,
-             'last_name'=>$request->lname,
+            //  'first_name'=>$request->fname,
+            //  'last_name'=>$request->lname,
+            'NIC_number'=>$request->nic,
              'description'=>$request->description,
              'phone_number'=>$request->phoneNumber,
              'address'=>$request->address,
@@ -38,6 +43,7 @@ class PostController extends Controller
              'required_date'=>$request->date,
              'patient_picture'=>$image_patient_name,
              'med_report'=>$docu_repo_name,
+
         ]);
          
 
