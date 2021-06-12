@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\PostController;
+use App\Http\Controllers\HeartController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,9 +18,16 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('posts',PostController::class);
+Route::get('/notyet', function () {
+    return view('creating-post-pages.notYet');
+});
+
+
+Route::resource('hert',HeartController::class);
 
 Auth::routes();
+
+
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
