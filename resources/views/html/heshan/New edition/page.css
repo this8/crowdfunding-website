@@ -20,14 +20,26 @@
 .card-body {
     line-height: 1.5;
     font-size: 0.9em;
-    padding: 0 0 0 2px;
+    padding: 0 5px 0 5px;
     background: #eeeeee;
     display: inline-block;
     text-align: justify;
     padding-left: 10px;
+    min-width: 260px;
+}
+.card-body-title {
+    font-size: 1em;
 }
 .col-image {
     margin-right: 5px;
+    max-width: 200px;
+}
+.card-title {
+    text-align: center;
+}
+.card-items {
+    list-style: none;
+    margin-top: 5px;
 }
 .card-footer {
     display: flex;

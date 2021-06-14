@@ -1,12 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-<<<<<<< HEAD
 use App\Http\Controllers\PostController;
 use App\Htpp\controllers\HeartPostController;
-=======
-use App\Http\Controllers\HeartController;
->>>>>>> Main
 
 /*
 |--------------------------------------------------------------------------
@@ -23,16 +19,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-<<<<<<< HEAD
-
-=======
-Route::get('/notyet', function () {
-    return view('creating-post-pages.notYet');
-});
-
-
-Route::resource('hert',HeartController::class);
->>>>>>> Main
 
 Auth::routes();
 
