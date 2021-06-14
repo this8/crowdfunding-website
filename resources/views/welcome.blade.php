@@ -107,8 +107,8 @@
                 Categery
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Heart</a>
-                <a class="dropdown-item" href="#">Cancer</a>
+                <a class="dropdown-item" href="{{ route('login') }}">Heart</a>
+                <a class="dropdown-item" href="{{ route('login') }}">Cancer</a>
                 <a class="dropdown-item" href="#">Vision Problem</a>
                 <a class="dropdown-item" href="#">infants</a>
                 <div class="dropdown-divider"></div>

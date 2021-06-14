@@ -1,6 +1,8 @@
-@extends('layouts.frontend')
+@extends('layouts.post')
 
 @section('content')
+
+  <!-- creating post -->
 
   <div class="container">
     <div class="row">
@@ -10,23 +12,11 @@
 
       <div class="col-lg-6">
         <div id="ui">
-          <form class="form-group text-center" name="fmCreatingPost">
-
+          <form class="form-group text-center" name="fmCreatingPost" action="{{route('heart.store')}}" method="POST" enctype="multipart/form-data">
+          @csrf
             <h1 class="text-center">Creating Post</h1>
             <div class="row">
-              <div class="col-lg-12">
-                <label> Category </label>
-                <select class="form-control">
-                  <option>Category...</option>
-                  <option>Heart</option>
-                  <option>Cancer</option>
-                  <option>Vision Problem</option>
-                  <option>Infants</option>
-                  <option>Something else here</option>
-                </select>
-              </div>
-
-              <br> <br>
+              
               <div class="col-lg-6">
                 <br>
                 <label>Patient First Name</label>
@@ -54,12 +44,12 @@
               </div>
 
               <div class="col-lg-12">
-
-                <label>E-mail</label>
-                <input type="email" name="email" class="form-control" placeholder="Enter your email..">
-
+                <label>Short Description</label>
+                <textarea class="form-control" cols="30" rows="4" name="s_description"></textarea>
                 <br>
               </div>
+
+              
 
               <div class="col-lg-6">
                 <label>Required Donation Amount</label>
@@ -70,21 +60,21 @@
 
               <div class="col-lg-6">
                 <label>Required date</label>
-                <input type="date" name="date" class="form-control" placeholder="Enter required date..">
+                <input type="date" name="rqDate" class="form-control" placeholder="Enter required date..">
                 <br>
               </div>
 
 
               <div class="inputUpload">
-                <label for="file-ip" class="fileLabel">upload patient picture</label>
+                <label for="file-ip"  class="fileLabel">upload patient picture</label>
 
-                <input type="file" class="uploadFile" accept="image/*">
+                <input type="file" name="profile" class="uploadFile" accept="image/*">
 
                 <br><br>
 
-                <label for="file-ip" class="fileLabel">upload medical reports</label>
+                <label for="file-ip"  class="fileLabel">upload medical reports</label>
 
-                <input type="file" class="uploadFile">
+                <input type="file" name="report" class="uploadFile">
 
               </div>
 
@@ -99,5 +89,6 @@
       </div>
     </div>
   </div>
+  <!-- creating post end-->
 
   @endsection

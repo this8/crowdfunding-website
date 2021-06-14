@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
+use App\Htpp\controllers\HeartPostController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,7 +19,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('posts',PostController::class);
+
 
 Auth::routes();
 
@@ -32,7 +33,10 @@ Route::get('/Vision',[App\Http\Controllers\PagesController::class, 'Vision'])->n
 
 Route::get('/Infants',[App\Http\Controllers\PagesController::class, 'Infants'])->name('Infants');
 
+Route::post('/heart_post',[App\Http\Controllers\HeartPostController::class,'heart'])->name('heart');
 
+Route::post('/heart_post/store',[App\Http\Controllers\HeartPostController::class,'store'])->name('heart_post.store');
 
+// Route::get('/posts', [App\Http\Controllers\PostsController::class, 'index']);
 
 

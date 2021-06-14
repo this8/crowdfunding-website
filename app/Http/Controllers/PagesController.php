@@ -22,4 +22,5 @@ class PagesController extends Controller
     public function Infants(){
         return view('category.Infants');
     }
+
 }
