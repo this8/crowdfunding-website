@@ -78,14 +78,12 @@
         background-color: rgba(255, 255, 255, .15);
         backdrop-filter: blur(5px);       
       }
-
       .card{
       background: #fff;
       box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
       transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
       cursor: pointer;
       }
-
     .card:hover{
        transform: scale(1.05);
       box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
@@ -104,6 +102,7 @@
   </head>
   <body>
 
+<<<<<<< HEAD
 
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #c1e0f7;">
@@ -163,6 +162,10 @@
         </div>
       </nav>
 
+=======
+    @include('navbar')
+ 
+>>>>>>> Main
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -172,7 +175,7 @@
  <br>
 
   <!--caro-->
- 
+
 
 <div class="container">
   <div class="glass12"> 

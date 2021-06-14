@@ -1,5 +1,5 @@
 body {
-    background-image: url("images/doctor.jpg");
+    background-image: url("images/poster/doc.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -10,7 +10,7 @@ body {
     padding: 30px;
     margin-top: 50px;
     border-radius: 20px;
-    opacity: 0.9;
+    opacity: 0.8;
 }
 
 #ui label,
@@ -28,9 +28,21 @@ h1 {
 
 .uploadFile {
     position: absolute;
-    right: 50px;
+    right: 70px;
     cursor: pointer;
     opacity: 0;
+}
+
+.long_button {
+    border-radius: 100px;
+}
+
+.round_input {
+    border-radius: 100px;
+}
+
+.round_textarea {
+    border-radius: 30px;
 }
 
 @media screen and (max-width: 3000px) {
@@ -50,7 +62,7 @@ h1 {
         font-size: 16px;
         line-height: 60px;
         padding: 0 15px;
-        border-radius: 0 5px 5px 0;
+        border-radius: 100px;
     }
 }
 
@@ -71,7 +83,7 @@ h1 {
         font-size: 16px;
         line-height: 60px;
         padding: 0 15px;
-        border-radius: 0 5px 5px 0;
+        border-radius: 100px;
     }
 }
 
@@ -92,7 +104,7 @@ h1 {
         font-size: 16px;
         line-height: 60px;
         padding: 0 15px;
-        border-radius: 0 5px 5px 0;
+        border-radius: 100px;
     }
 }
 
@@ -113,7 +125,7 @@ h1 {
         font-size: 16px;
         line-height: 60px;
         padding: 0 15px;
-        border-radius: 0 5px 5px 0;
+        border-radius: 100px;
     }
 }
 
@@ -134,7 +146,7 @@ h1 {
         font-size: 16px;
         line-height: 60px;
         padding: 0 15px;
-        border-radius: 0 5px 5px 0;
+        border-radius: 100px;
     }
 }
 
@@ -155,7 +167,7 @@ h1 {
         font-size: 16px;
         line-height: 60px;
         padding: 0 15px;
-        border-radius: 0 5px 5px 0;
+        border-radius: 100px;
     }
 }
 
@@ -176,7 +188,7 @@ h1 {
         font-size: 16px;
         line-height: 60px;
         padding: 0 15px;
-        border-radius: 0 5px 5px 0;
+        border-radius: 100px;
     }
 }
 
@@ -197,7 +209,7 @@ h1 {
         font-size: 16px;
         line-height: 60px;
         padding: 0 15px;
-        border-radius: 0 5px 5px 0;
+        border-radius: 100px;
     }
 }
 @media screen and (max-width: 366px) {
@@ -217,6 +229,6 @@ h1 {
         font-size: 16px;
         line-height: 60px;
         padding: 0 15px;
-        border-radius: 0 5px 5px 0;
+        border-radius: 100px;
     }
 }
