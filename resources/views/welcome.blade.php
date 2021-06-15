@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <style>
-      .img1 {
+    .img1 {
         float: left;
           max-width: 600px;
           max-height: 500px;
@@ -74,8 +74,23 @@
       .container .btn2:hover {
         background-color:   #7CFC00;
       }
+      .glass12{
+        background-color: rgba(255, 255, 255, .15);
+        backdrop-filter: blur(5px);       
+      }
+      .card{
+      background: #fff;
+      box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+      transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+      cursor: pointer;
+      }
+    .card:hover{
+       transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+      }
+    </style>
+
     
-        </style>
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -92,7 +107,7 @@
 
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #c1e0f7;">
-        <a class="navbar-brand" href="#">Crowdfounding web</a>
+        <a class="navbar-brand" href="#">uFund</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -100,7 +115,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#">Home<span class="sr-only"></span></a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
