@@ -1,11 +1,10 @@
 .card-deck{
-    margin:  0 auto;
+    margin:  2% auto;
     max-width: 1000px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
     gap: 20px;
     font-family: sans-serif;
-    margin-top: 2%;
 }
 .card {
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
@@ -13,7 +12,7 @@
     background: #cccccc;
     padding: 10px 5px 10px 5px;
     border-radius: 10px 30px;
-    transition: 2s;
+    transition: 0.5s;
 }
 .card-img-left{
     width: 100%;
@@ -61,12 +60,12 @@
     border-radius: 5px;
     width: 100px;
     height: 30px;
-    transition: 1.5s;
+    transition: 1s;
 }
 
 .button-more:hover {
     text-decoration: underline;
-    background-color: rgb(40, 226, 40);
+    background-color: rgb(102, 241, 102);
 }
 .w3-light-grey {
     border: 1px solid #cccccc;
