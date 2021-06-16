@@ -13,6 +13,7 @@
     padding: 10px 5px 10px 5px;
     border-radius: 10px 30px;
     transition: 0.5s;
+    max-width: 500px;
 }
 .card-img-left{
     width: 100%;
@@ -21,7 +22,7 @@
 .card-body {
     line-height: 1.5;
     font-size: 0.9em;
-    margin-left: 12px;
+    margin-left: 3%;
     background: #eeeeee;
     display: inline-block;
     text-align: justify;
