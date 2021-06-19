@@ -153,15 +153,21 @@
                    aria-haspopup="true" aria-expanded="false" v-pre>
                     {{ Auth::user()->name }}
                 </a>
-                <form method="POST" action="{{ route('logout') }}">
-                    @csrf
-
-                    <x-dropdown-link :href="route('logout')"
-                                     onclick="event.preventDefault();
-                                                this.closest('form').submit();">
-                        {{ __('Log Out') }}
-                    </x-dropdown-link>
-                </form>
+                <div class="dropdown-menu">{{-- this class use to drop and down menu --}}
+                   
+                    <form method="POST" action="{{ route('logout') }}">
+                        @csrf
+    
+                        <x-dropdown-link :href="route('logout')"
+                                         onclick="event.preventDefault();
+                                                    this.closest('form').submit();">
+                            {{ __('Log Out') }}
+                        </x-dropdown-link>
+                    </form>
+                </div>
+                
+                
+              
 
 {{--                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">--}}
 {{--                    <a class="dropdown-item" href="route('logout')"--}}
