@@ -1,0 +1,77 @@
+.card-deck{
+    margin:  0 auto;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    gap: 20px;
+    font-family: sans-serif;
+    margin-top: 2%;
+}
+.card {
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    display: flex;
+    background: #cccccc;
+    padding: 10px 5px 10px 5px;
+    border-radius: 10px 30px;
+    transition: 0.5s;
+}
+.card-img-left{
+    width: 100%;
+    display: block;   
+}
+.card-body {
+    line-height: 1.5;
+    font-size: 0.9em;
+    margin-left: 12px;
+    background: #eeeeee;
+    display: inline-block;
+    text-align: justify;
+    padding-left: 5px;
+    min-width: 250px;
+    border-radius: 10px 30px;
+}
+.card-body-title {
+    font-size: 1.2em;
+}
+.col-image {
+    margin-left: 10px;
+    max-width: 200px;
+}
+.card-name {
+    text-align: center;
+    font-size: 1.2em;
+}
+.card-items {
+    list-style: none;
+    margin-top: 5px;
+}
+.card-footer {
+    display: flex;
+    font-size: 0.8em;
+    padding-bottom: 0%;
+    background: #cccccc;
+}
+.btn-detail{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button-more {
+    margin-top: 10px;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    transition: 1s;
+}
+
+.button-more:hover {
+    text-decoration: underline;
+    background-color: rgb(40, 226, 40);
+}
+.w3-light-grey {
+    border: 1px solid #cccccc;
+    margin-right: 5px;
+}
+.card:hover{
+    box-shadow: 8px 8px 8px 8px gray;
+}

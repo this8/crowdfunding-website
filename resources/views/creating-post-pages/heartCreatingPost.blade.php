@@ -11,16 +11,11 @@
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
   <link rel="stylesheet" href="{{ asset('css/creatingPost.css') }}">
-  <title>Web Assignment</title>
+  <title>create post</title>
 
 </head>
 
 <body>
-
-  {{-- including navbar --}}
-  @include('navbar')
-
-
 
   <!-- creating post -->
 
@@ -39,6 +34,18 @@
             </center>
            
             <div class="row">
+
+            <div class="col-lg-12">
+                <label> Category </label>
+                <select class="form-control">
+                  <option value="">Category...</option>
+                  <option value="">Heart</option>
+                  <option value="">Cancer</option>
+                  <option value="">Vision Problem</option>
+                  <option value="">Infants</option>
+                  <option value="">Something else here</option>
+                </select>
+              </div>
 
               <br> <br>
               {{-- <div class="col-lg-6">
