@@ -1,11 +1,10 @@
 .card-deck{
-    margin:  0 auto;
+    margin:  2% auto;
     max-width: 1000px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
     gap: 20px;
     font-family: sans-serif;
-    margin-top: 2%;
 }
 .card {
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
@@ -14,15 +13,18 @@
     padding: 10px 5px 10px 5px;
     border-radius: 10px 30px;
     transition: 0.5s;
+    max-width: 500px;
 }
 .card-img-left{
     width: 100%;
-    display: block;   
+    display: block;  
+    max-width: 200px;
+    max-height: 200px;
 }
 .card-body {
     line-height: 1.5;
     font-size: 0.9em;
-    margin-left: 12px;
+    margin-left: 3%;
     background: #eeeeee;
     display: inline-block;
     text-align: justify;
@@ -66,7 +68,7 @@
 
 .button-more:hover {
     text-decoration: underline;
-    background-color: rgb(40, 226, 40);
+    background-color: rgb(102, 241, 102);
 }
 .w3-light-grey {
     border: 1px solid #cccccc;
