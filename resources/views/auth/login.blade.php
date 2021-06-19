@@ -4,8 +4,8 @@
 
 <center>
     <div class="container">
-        <div class="ui shadow-lg p-3" style="margin-top: 250px">
-            <form method="POST" action="{{ route('login') }}">
+        <div class="ui col-12 shadow-lg p-3" >
+            <form method="POST" class="form-group" action="{{ route('login') }}">
                 @csrf
             
                 <header>Log In Account</header>
@@ -43,14 +43,15 @@
                         <br>
 
                         <input type="submit" class="btn" value="LOGIN">
-                        
+                        <br>
+                        <a href="register">Register</a>
                 
-                        @if (Route::has('password.request'))
+                        {{-- @if (Route::has('password.request'))
                         
                                <a class=" btn-link" href="{{ route('password.request') }}">
                                    <br>{{ __('Forgot Your Password?') }}
                                </a>
-                        @endif
+                        @endif --}}
                         
             </form>
         </div>
@@ -60,4 +61,3 @@
 
 
 @endsection
-

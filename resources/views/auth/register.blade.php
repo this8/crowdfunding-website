@@ -5,7 +5,7 @@
 
     <div class="row " style="margin-top:200px">
 
-        <div class="ui col-md-5 col-sm-12" style="margin-bottom: 50px;height: 600px;opacity:0.6; background: linear-gradient(to right, rgb(248, 242, 188), #eb7e18);">
+        <div class="ui col-md-5 col-sm-12" style="margin-bottom: 50px; margin:33px; height: 600px;opacity:0.6; background: linear-gradient(to right, rgb(248, 242, 188), #eb7e18);">
             
                 <header class="text-center" style="color: red"> Terms and Condition </header>
             
@@ -19,8 +19,8 @@
 
         </div>
 
-        <div class="ui col-md-5 col-sm-12" style="height: 600px; background: linear-gradient(to right, rgb(248, 242, 188), #eb7e18);">
-            <form method="POST" class="text-center" action="{{ route('register') }}">
+        <div class="ui col-md-5 col-sm-12" style="height: 600px; margin:33px; background: linear-gradient(to right, rgb(248, 242, 188), #eb7e18);">
+            <form method="POST" class="text-center my-form" action="{{ route('register') }}">
                 @csrf
             
                 <header>Registration</header>
@@ -70,6 +70,8 @@
                     <button type="submit" class="btn">
                             {{ __('Register') }}
                     </button>
+                    <br>
+                    <a href="login">Already registered??</a>
             </form>
         </div>
 
