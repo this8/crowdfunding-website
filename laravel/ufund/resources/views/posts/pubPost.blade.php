@@ -25,7 +25,9 @@
           <div class="card-body">
             <!-- Components -->
 
-
+            {{-- this button download medical report --}}
+            <a download class="btn btn-primary" href="patients/{{$post->NIC_number}}/med-document/{{$post->med_report}}">Download medical report</a>
+           
             <h6 class="card-body-title">NIC number :{{$post->NIC_number}}</h6>
             <table class="card-items">
               <tr>
@@ -62,16 +64,7 @@
             </div>
             <!-- More detail button -->
 
-            <br>
-              <td> <a href="post/{{$post->id}}/edit " class="btn btn-outline-success"> Edit </a>
-            <td> 
-            
-                <form action="/post/{{$post->id}}" method="POST">
-                  <br>
-                    <button class="btn btn-outline-danger" onclick="return confirm('Are you sure ?');" > Delete </button>
-                    @csrf
-                    @method('delete')
-                </form>    
+            <br>  
 
             </td>
 

@@ -17,7 +17,7 @@ class PostController extends Controller
     public function publicPost()
     {
         $posts=Post::all();
-        return view('posts/posts')->with('posts',$posts);
+        return view('posts/pubPost')->with('posts',$posts);
     }
     
 

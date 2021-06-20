@@ -20,6 +20,8 @@ Route::get('/', function () {
 
 Route::resource('/post',PostController::class);
 
+Route::get('publicPost',[PostController::class,'publicPost']);
+
 
 Route::get('/dashboard', function () {
     return view('home');
