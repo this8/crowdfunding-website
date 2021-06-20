@@ -109,6 +109,7 @@ class PostController extends Controller
             // 'patient_picture'=>$image_patient_name,
             // 'med_report'=>$docu_repo_name,
         ]);
+        return redirect('post');
     }
 
     public function destroy($id)

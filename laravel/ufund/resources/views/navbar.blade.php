@@ -17,7 +17,7 @@
                     Category
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Heart</a>
+                    <a class="dropdown-item" href="publicPost">Heart</a>
                     <a class="dropdown-item" href="#">Cancer</a>
                     <a class="dropdown-item" href="#">Vision Problem</a>
                     <a class="dropdown-item" href="#">infants</a>
@@ -50,12 +50,12 @@
                    
                     <form method="POST" action="{{ route('logout') }}">
                         @csrf
-    
-                        <x-dropdown-link :href="route('logout')"
-                                         onclick="event.preventDefault();
-                                                    this.closest('form').submit();">
-                            {{ __('Log Out') }}
-                        </x-dropdown-link>
+                        <a href="post" class="dropdown-item">Posts</a>
+
+                        <a class="dropdown-item" href="{{ route('logout') }}"
+                        onclick="event.preventDefault();">
+                        {{ __('Logout') }}
+                         </a>
                     </form>
                 </div>
                 
