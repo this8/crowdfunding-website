@@ -17,6 +17,8 @@
 
 <body>
 
+    @include('navbar')
+
 <!-- creating post -->
 
 <div class="container">
@@ -27,7 +29,7 @@
 
         <div class="col-lg-6">
             <div id="ui">
-                <form class="form-group text-center" method="POST" action="/hert" enctype="multipart/form-data"
+                <form class="form-group text-center" method="POST" action="/post" enctype="multipart/form-data">
                 @csrf
                 <center>
                     <h1>Creating Posts</h1>
@@ -37,13 +39,13 @@
 
                     <div class="col-lg-12">
                         <label> Category </label>
-                        <select class="form-control">
+                        <select class="form-control" name="category">
                             <option value="">Category...</option>
-                            <option value="">Heart</option>
-                            <option value="">Cancer</option>
-                            <option value="">Vision Problem</option>
-                            <option value="">Infants</option>
-                            <option value="">Something else here</option>
+                            <option value="Heart">Heart</option>
+                            <option value="Cancer">Cancer</option>
+                            <option value="Vision Problem">Vision Problem</option>
+                            <option value="Infants">Infants</option>
+                            <option value="Others">Something else here</option>
                         </select>
                     </div>
 
