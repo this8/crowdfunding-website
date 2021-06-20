@@ -33,9 +33,9 @@ Route::get('/home', function () {
 
 require __DIR__.'/auth.php';
 
-Route::get('/posts', function () {
-    return view('post');
-});
+// Route::get('/posts', function () {
+//     return view('post');
+// });
 
 Route::get('/profile', function () {
     return view('profile');

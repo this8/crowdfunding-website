@@ -36,16 +36,18 @@
                 </center>
 
                 <div class="row">
+                    <?php $catogories=["Heart","Cancer","Vision Problem","Infants","Something else her"] ?>
 
                     <div class="col-lg-12">
                         <label> Category </label>
                         <select class="form-control" name="category">
+                            
                             <option value="">Category...</option>
-                            <option value="Heart">Heart</option>
-                            <option value="Cancer">Cancer</option>
-                            <option value="Vision Problem">Vision Problem</option>
-                            <option value="Infants">Infants</option>
-                            <option value="Others">Something else here</option>
+                            @foreach ($catogories as $catogory)
+                                <option value="{{$catogory}}">{{$catogory}}</option>
+
+                            @endforeach
+
                         </select>
                     </div>
 
@@ -71,7 +73,7 @@
                             <a  class="alert-link">If patient is less than 16 years old,<br> Enter parent's NIC number</a>.
                         </div>
                         <label>Enter Your NIC number</label>
-                        <input type="number" name="nic" class="form-control round_input" placeholder="Enter your NIC number.">
+                        <input type="text" name="nic" class="form-control round_input" placeholder="Enter your NIC number.">
                     </div>
 
                     <div class="col-lg-12">
