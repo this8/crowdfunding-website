@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\CategoryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,9 +19,16 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+//post
 Route::resource('/post',PostController::class);
 
-Route::get('publicPost',[PostController::class,'publicPost']);
+//for catogries
+
+Route::get('/heart',[CategoryController::class,'Heart']);
+Route::get('/cancer',[CategoryController::class,'Cancer']);
+Route::get('/vision',[CategoryController::class,'Vision']);
+Route::get('/infants',[CategoryController::class,'Infants']);
+Route::get('/other',[CategoryController::class,'others']);
 
 
 Route::get('/dashboard', function () {
