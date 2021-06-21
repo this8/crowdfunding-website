@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Post;
 use Illuminate\Http\Request;
 
+
+
 class PostController extends Controller
 {
 
@@ -12,15 +14,7 @@ class PostController extends Controller
     {
         $posts=Post::all();
         return view('posts/posts')->with('posts',$posts);
-    }
-
-    public function publicPost()
-    {
-        $posts=Post::all();
-        return view('posts/pubPost')->with('posts',$posts);
-    }
-    
-
+    }  
 
     public function create()
     {

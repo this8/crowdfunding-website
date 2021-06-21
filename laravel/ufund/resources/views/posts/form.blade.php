@@ -36,7 +36,7 @@
                 </center>
 
                 <div class="row">
-                    <?php $catogories=["Heart","Cancer","Vision Problem","Infants","Something else her"] ?>
+                    <?php $catogories=["Heart","Cancer","Vision Problem","Infants","Something else here"] ?>
 
                     <div class="col-lg-12">
                         <label> Category </label>
@@ -44,6 +44,7 @@
                             
                             <option value="">Category...</option>
                             @foreach ($catogories as $catogory)
+
                                 <option value="{{$catogory}}">{{$catogory}}</option>
 
                             @endforeach
@@ -137,7 +138,7 @@
                     </div>
 
                 </div>
-                <input type="submit" name="Submit" class="btn btn-primary btn-block long_button">
+                <input type="submit" name="Submit" value="Submit" class="btn btn-primary btn-block long_button">
                 <input type="reset" name="reset" value="Reset" class="btn btn-danger btn-block long_button">
 
                 </form>

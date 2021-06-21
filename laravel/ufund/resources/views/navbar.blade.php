@@ -17,12 +17,12 @@
                     Category
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="publicPost">Heart</a>
-                    <a class="dropdown-item" href="#">Cancer</a>
-                    <a class="dropdown-item" href="#">Vision Problem</a>
-                    <a class="dropdown-item" href="#">infants</a>
+                    <a class="dropdown-item" href="heart">Heart</a>
+                    <a class="dropdown-item" href="cancer">Cancer</a>
+                    <a class="dropdown-item" href="vision">Vision Problem</a>
+                    <a class="dropdown-item" href="infants">infants</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="other">Something else here</a>
                 </div>
             </li>
             <li class="nav-item">
