@@ -17,6 +17,8 @@
 
 <body>
 
+    @include('navbar')
+
 <!-- creating post -->
 
 <div class="container">
@@ -27,23 +29,25 @@
 
         <div class="col-lg-6">
             <div id="ui">
-                <form class="form-group text-center" method="POST" action="/hert" enctype="multipart/form-data"
+                <form class="form-group text-center" method="POST" action="/post" enctype="multipart/form-data">
                 @csrf
                 <center>
                     <h1>Creating Posts</h1>
                 </center>
 
                 <div class="row">
+                    <?php $catogories=["Heart","Cancer","Vision Problem","Infants","Something else her"] ?>
 
                     <div class="col-lg-12">
                         <label> Category </label>
-                        <select class="form-control">
+                        <select class="form-control" name="category">
+                            
                             <option value="">Category...</option>
-                            <option value="">Heart</option>
-                            <option value="">Cancer</option>
-                            <option value="">Vision Problem</option>
-                            <option value="">Infants</option>
-                            <option value="">Something else here</option>
+                            @foreach ($catogories as $catogory)
+                                <option value="{{$catogory}}">{{$catogory}}</option>
+
+                            @endforeach
+
                         </select>
                     </div>
 
@@ -69,7 +73,7 @@
                             <a  class="alert-link">If patient is less than 16 years old,<br> Enter parent's NIC number</a>.
                         </div>
                         <label>Enter Your NIC number</label>
-                        <input type="number" name="nic" class="form-control round_input" placeholder="Enter your NIC number.">
+                        <input type="text" name="nic" class="form-control round_input" placeholder="Enter your NIC number.">
                     </div>
 
                     <div class="col-lg-12">
