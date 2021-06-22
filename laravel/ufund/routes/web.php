@@ -15,25 +15,10 @@ use App\Http\Controllers\CategoryController;
 |
 */
 
+
 Route::get('/', function () {
     return view('welcome');
 });
-
-//post
-Route::resource('/post',PostController::class);
-
-//for catogries
-
-Route::get('/heart',[CategoryController::class,'Heart']);
-Route::get('/cancer',[CategoryController::class,'Cancer']);
-Route::get('/vision',[CategoryController::class,'Vision']);
-Route::get('/infants',[CategoryController::class,'Infants']);
-//Route::get('/other',[CategoryController::class,'others']);
-
-
-Route::get('/dashboard', function () {
-    return view('home');
-})->middleware(['auth'])->name('dashboard');
 
 require __DIR__.'/auth.php';
 
@@ -43,18 +28,14 @@ Route::get('/home', function () {
 
 require __DIR__.'/auth.php';
 
-// Route::get('/posts', function () {
-//     return view('post');
-// });
-
-Route::get('/profile', function () {
-    return view('profile');
-});
-
-Route::get('/form', function () {
-    return view('form');
-});
-
 Route::get('/about-us', function () {
     return view('about');
 });
+
+Route::get('/posts', [PostController::class, 'index']);
+Route::post('/posts', [PostController::class, 'store']);
+Route::get('/posts/create', [PostController::class, 'create']);
+Route::get('/posts/{post}/edit', [PostController::class, 'edit']);
+Route::get('/posts/{post}', [PostController::class, 'show']);
+Route::put('/posts/{post}', [PostController::class, 'update']);
+Route::delete('/posts/{post}', [PostController::class, 'delete']);

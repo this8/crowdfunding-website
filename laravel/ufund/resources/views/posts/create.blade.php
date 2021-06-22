@@ -29,51 +29,33 @@
 
         <div class="col-lg-6">
             <div id="ui">
-                <form class="form-group text-center" method="POST" action="/post" enctype="multipart/form-data">
+                <form class="form-group text-center" method="POST" action="/posts" enctype="multipart/form-data">
                 @csrf
                 <center>
                     <h1>Creating Posts</h1>
                 </center>
 
                 <div class="row">
-                    <?php $catogories=["Heart","Cancer","Vision Problem","Infants","Something else here"] ?>
-
                     <div class="col-lg-12">
                         <label> Category </label>
-                        <select class="form-control" name="category">
+                        <select class="form-control" name="categoryId">
                             
-                            <option value="">Category...</option>
-                            @foreach ($catogories as $catogory)
-
-                                <option value="{{$catogory}}">{{$catogory}}</option>
-
+                            @foreach ($categories as $category)
+                                <option value="{{ $category->id }}"> {{ $category->name }} </option>
                             @endforeach
 
                         </select>
                     </div>
 
                     <br> <br>
-                    {{-- <div class="col-lg-6">
-                      <br> --}}
-                    {{-- <label>Patient First Name</label>
 
-                    <input type="text" name="fname" class="form-control round_input" placeholder="Enter your first name">
-                  </div>
-
-                  <div class="col-lg-6">
-                    <br>
-                    <label>Patient Last Name</label>
-
-                    <input type="text" name="lname" class="form-control round_input" placeholder="Enter your last name">
-                  </div> --}}
-<!-- 
                     <div class="col-lg-12">
 
                             <label>Age</label>
                             <input type="number" name="age" class="form-control" placeholder="Enter your Age">
 
                             <br>
-                    </div> -->
+                    </div>
 
                     <div class="col-lg-12">
                         <br>
