@@ -11,8 +11,12 @@
 </head>
 <body>
 
+@include('navbar')
 
     <div class="card-deck">
+@foreach ($posts as $post)
+
+    @if($post->Category=="Heart")
       <!-- Poster -->
         <div class="card">
           <div class="col-image">
@@ -28,16 +32,16 @@
                 <td>........</td>
               </tr>
               <tr>
+                <td>NIC_number:</td>
+                <td>{{$post->NIC_number}}</td>
+              </tr>
+              <tr>
                 <td>Required date:</td>
-                <td>..........</td>
+                <td>{{$post->required_date}}</td>
               </tr>
               <tr>
                 <td>Required amount:</td>
-                <td>..........</td>
-              </tr>
-              <tr>
-                <td>Required amount:</td>
-                <td>..........</td>
+                <td>{{$post->donation_amount}}</td>
               </tr>
             </table>
             <br>
@@ -53,6 +57,10 @@
             
           </div>
         </div>
+
+    @endif
+
+  @endforeach
       <!-- End poster -->
 
       <!-- Poster -->
@@ -70,11 +78,11 @@
               <td>........</td>
             </tr>
             <tr>
-              <td>Required date:</td>
+              <td>NIC:</td>
               <td>..........</td>
             </tr>
             <tr>
-              <td>Required amount:</td>
+              <td>Required date:</td>
               <td>..........</td>
             </tr>
             <tr>
@@ -112,11 +120,11 @@
               <td>........</td>
             </tr>
             <tr>
-              <td>Required date:</td>
+              <td>NIC:</td>
               <td>..........</td>
             </tr>
             <tr>
-              <td>Required amount:</td>
+              <td>Required date:</td>
               <td>..........</td>
             </tr>
             <tr>

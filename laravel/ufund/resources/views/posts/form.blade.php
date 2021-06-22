@@ -66,6 +66,14 @@
 
                     <input type="text" name="lname" class="form-control round_input" placeholder="Enter your last name">
                   </div> --}}
+<!-- 
+                    <div class="col-lg-12">
+
+                            <label>Age</label>
+                            <input type="number" name="age" class="form-control" placeholder="Enter your Age">
+
+                            <br>
+                    </div> -->
 
                     <div class="col-lg-12">
                         <br>
@@ -99,13 +107,7 @@
                         <br>
                     </div>
 
-                    {{-- <div class="col-lg-12">
-
-                      <label>E-mail</label>
-                      <input type="email" name="email" class="form-control" placeholder="Enter your email..">
-
-                      <br>
-                    </div> --}}
+                    
 
                     <div class="col-lg-6">
                         <label>Required Donation Amount</label>

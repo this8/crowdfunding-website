@@ -38,14 +38,14 @@ class PostController extends Controller
 
 
         Post::create([
-             // 'user_id'=>$user->id,
-            //  'first_name'=>$request->fname,
-            //  'last_name'=>$request->lname,
+            //  'Name'=>$user->name,
             'Category'=>$request->category,
             'NIC_number'=>$request->nic,
+            // 'Age'=>$request->age,
             'description'=>$request->description,
             'phone_number'=>$request->phoneNumber,
             'address'=>$request->address,
+            //'email'=>$user->email,
             'donation_amount'=>$request->rqAmount,
             'required_date'=>$request->date,
             'patient_picture'=>$image_patient_name,
