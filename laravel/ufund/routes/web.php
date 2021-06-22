@@ -28,7 +28,7 @@ Route::get('/heart',[CategoryController::class,'Heart']);
 Route::get('/cancer',[CategoryController::class,'Cancer']);
 Route::get('/vision',[CategoryController::class,'Vision']);
 Route::get('/infants',[CategoryController::class,'Infants']);
-Route::get('/other',[CategoryController::class,'others']);
+//Route::get('/other',[CategoryController::class,'others']);
 
 
 Route::get('/dashboard', function () {

@@ -21,8 +21,8 @@
                     <a class="dropdown-item" href="/cancer">Cancer</a>
                     <a class="dropdown-item" href="/vision">Vision Problem</a>
                     <a class="dropdown-item" href="/infants">infants</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="/other">Something else here</a>
+{{--                    <div class="dropdown-divider"></div>--}}
+{{--                    <a class="dropdown-item" href="/other">Something else here</a>--}}
                 </div>
             </li>
             <li class="nav-item">
@@ -47,20 +47,20 @@
                     {{ Auth::user()->name }}
                 </a>
                 <div class="dropdown-menu">{{-- this class use to drop and down menu --}}
-                   
+
                     <form method="POST" action="{{ route('logout') }}">
                         @csrf
-                        <a href="/post" class="dropdown-item">Posts</a>
+                        <a href="/post" class="dropdown-item">Profile</a>
 
                         <a class="dropdown-item" href="{{ route('logout') }}"
-                        onclick="event.preventDefault();">
+                        onclick="event.preventDefault();this.closest('form').submit();">
                         {{ __('Logout') }}
                          </a>
                     </form>
                 </div>
-                
-                
-              
+
+
+
 
 {{--                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">--}}
 {{--                    <a class="dropdown-item" href="route('logout')"--}}

@@ -19,7 +19,7 @@
 
       @foreach ($posts as $post)
 
-          @if($post->Category=="Vision")
+          @if($post->Category=="Vision Problem")
           <div class="card-deck">
 
             <div class="card col-12">
@@ -29,10 +29,10 @@
               </div>
               <div class="card-body">
                 <!-- Components -->
-    
+
                 {{-- this button download medical report --}}
                 <a download class="btn btn-primary" href="patients/{{$post->NIC_number}}/med-document/{{$post->med_report}}">Download medical report</a>
-               
+
                 <h6 class="card-body-title">NIC number :{{$post->NIC_number}}</h6>
                 <table class="card-items">
                   <tr>
@@ -42,7 +42,7 @@
                       <td></td>
                       <td>
                           &nbsp;<textarea cols="30" rows="10">{{$post->description}}</textarea>
-    
+
                       </td>
                   </tr>
                   <tr>
@@ -68,33 +68,33 @@
                   <div class="w3-container w3-blue w3-round-xlarge" style="width: 50%;">50%</div>
                 </div>
                 <!-- More detail button -->
-    
-                <br>  
-    
+
+                <br>
+
                 </td>
-    
+
                 <div class="btn-detail">
                   <button class="button-more" name="More-details">
                     <a class="link-" href="#">More Details</a></button>
                 </div>
-    
-                
+
+
               </div>
             </div>
         </div><br><br>
           @endif
 
-      
+
 
       @endforeach
-          
-       
+
+
       <!-- End poster -->
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-      
-      
-      
+
+
+
 </body>
 </html>
