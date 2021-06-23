@@ -16,10 +16,10 @@
     max-width: 500px;
 }
 .card-img-left{
-    width: 100%;
+    width: 200px;
     display: block;  
     max-width: 200px;
-    max-height: 200px;
+    height: 180px;
 }
 .card-body {
     line-height: 1.5;

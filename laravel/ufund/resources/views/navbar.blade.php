@@ -17,19 +17,18 @@
                     Category
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="/heart">Heart</a>
-                    <a class="dropdown-item" href="/cancer">Cancer</a>
-                    <a class="dropdown-item" href="/vision">Vision Problem</a>
-                    <a class="dropdown-item" href="/infants">infants</a>
-{{--                    <div class="dropdown-divider"></div>--}}
-{{--                    <a class="dropdown-item" href="/other">Something else here</a>--}}
+                    <a class="dropdown-item" href="/posts/?category=1000">Heart</a>
+                    <a class="dropdown-item" href="/posts/?category=1001">Cancer</a>
+                    <a class="dropdown-item" href="/posts/?category=1002">Vision Problem</a>
+                    <a class="dropdown-item" href="/posts/?category=1003">infants</a>              
+                    <a class="dropdown-item" href="/posts/?category=1004">Other</a>
                 </div>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">About us</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="post/create">Create post</a>
+                <a class="nav-link" href="posts/create">Create post</a>
             </li>
             <li class="nav-item dropdown">
 {{--                <form method="POST" action="{{ route('logout') }}">--}}
@@ -50,7 +49,7 @@
 
                     <form method="POST" action="{{ route('logout') }}">
                         @csrf
-                        <a href="/post" class="dropdown-item">Profile</a>
+                        <a href="#" class="dropdown-item">Profile</a>
 
                         <a class="dropdown-item" href="{{ route('logout') }}"
                         onclick="event.preventDefault();this.closest('form').submit();">
@@ -59,16 +58,6 @@
                     </form>
                 </div>
 
-
-
-
-{{--                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">--}}
-{{--                    <a class="dropdown-item" href="route('logout')"--}}
-{{--                       onclick="event.preventDefault();--}}
-{{--             document.getElementById('logout-form').submit();">--}}
-{{--                        {{ __('Logout') }}--}}
-{{--                    </a>--}}
-{{--                </div>--}}
             </li>
         </ul>
 

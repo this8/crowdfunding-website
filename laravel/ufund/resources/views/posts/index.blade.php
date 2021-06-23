@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/post.css">
+    <link rel="stylesheet" href="/css/post.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 
     <title>Poster</title>
 </head>
@@ -16,12 +17,11 @@
     <div class="card-deck">
 @foreach ($posts as $post)
 
-    @if($post->Category=="Heart")
       <!-- Poster -->
         <div class="card">
           <div class="col-image">
-            <img class="card-img-left" src="patients/{{$post->NIC_number}}/patient-profile-pic/{{$post->patient_picture}}" alt="Card image cap">
-            <h4 class="card-name">Card Name</h4>
+            <img class="card-img-left" src="{{ asset('patients/' . $post->NIC_number . '/patient-profile-pic/' . $post->patient_picture) }}" alt="Card image cap">
+            <h4 class="card-name">{{ $post->user->name }}</h4>
           </div>
           <div class="card-body">
             <!-- Components -->
@@ -29,19 +29,19 @@
             <table class="card-items">
               <tr>
                 <td>Age:</td>
-                <td>........</td>
+                <td>{{ $post->Age }}</td>
               </tr>
               <tr>
                 <td>NIC_number:</td>
-                <td>{{$post->NIC_number}}</td>
+                <td>{{ $post->NIC_number }}</td>
               </tr>
               <tr>
                 <td>Required date:</td>
-                <td>{{$post->required_date}}</td>
+                <td>{{ $post->required_date }}</td>
               </tr>
               <tr>
                 <td>Required amount:</td>
-                <td>{{$post->donation_amount}}</td>
+                <td>{{ $post->donation_amount }}</td>
               </tr>
             </table>
             <br>
@@ -52,18 +52,12 @@
             <!-- More detail button -->
             <div class="btn-detail">
               <button class="button-more" name="More-details">
-                <a class="link-" href="#">More Details</a></button>
+                <a class="link-" href="/posts/{{$post->id}}">More Details</a></button>
             </div>
-            
-          </div>
         </div>
-
-    @endif
-
-  @endforeach
+        </div>
       <!-- End poster -->
-          
-     
+  @endforeach  
       </div>     
        
 </body>

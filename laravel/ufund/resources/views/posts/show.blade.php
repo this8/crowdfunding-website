@@ -15,13 +15,12 @@
 
       <!-- Poster -->
 
-      @foreach ($posts as $post)
       <div class="card-deck">
 
         <div class="card col-12">
           <div class="col-image">
-            <img class="card-img-left img-responsive" style="width: 500px" src="patients/{{$post->NIC_number}}/patient-profile-pic/{{$post->patient_picture}}" alt="Card image cap">
-            <h4 class="card-name ">{{$post->Category}}</h4>
+            <img class="card-img-left img-responsive" style="width: 500px" src="{{ asset('patients/' . $post->NIC_number . '/patient-profile-pic/' . $post->patient_picture) }}" alt="Card image cap">
+            <h4 class="card-name ">{{$post->Category->name}}</h4>
           </div>
           <div class="card-body">
             <!-- Components -->
@@ -61,32 +60,19 @@
             <div class="w3-light-grey w3-round-xlarge">
               <div class="w3-container w3-blue w3-round-xlarge" style="width: 50%;">50%</div>
             </div>
-            <!-- More detail button -->
-
-            <br>
-              <td> <a href="post/{{$post->id}}/edit " class="btn btn-outline-success"> Edit </a>
-            <td> 
-            
-                <form action="/post/{{$post->id}}" method="POST">
-                  <br>
-                    <button class="btn btn-outline-danger" onclick="return confirm('Are you sure ?');" > Delete </button>
-                    @csrf
-                    @method('delete')
-                </form>    
-
-            </td>
-
-            <div class="btn-detail">
-              <button class="button-more" name="More-details">
-                <a class="link-" href="#">More Details</a></button>
-            </div>
 
             
           </div>
         </div>
     </div><br><br>
 
-      @endforeach
+     <a href="/posts/{{$post->id}}/edit">edit</a>
+     <br>
+     <form action="/posts/{{$post->id}}" method="POST">
+            @csrf
+            @method('delete')
+              <button class="btn btn-outline-danger" onclick="return confirm('Are you sure ?');" > Delete </button>
+        </form>   
           
        
       <!-- End poster -->
