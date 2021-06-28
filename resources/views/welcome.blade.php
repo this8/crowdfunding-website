@@ -125,7 +125,7 @@
                 <a class="dropdown-item" href="{{ route('login') }}">Heart</a>
                 <a class="dropdown-item" href="{{ route('login') }}">Cancer</a>
                 <a class="dropdown-item" href="{{ route('login') }}">Vision Problem</a>
-                <a class="dropdown-item" href="#">infants</a>
+                <a class="dropdown-item" href="{{ route('login') }}">infants</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#">Something else here</a>
               </div>
