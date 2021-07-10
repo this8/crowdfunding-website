@@ -54,7 +54,7 @@
                 <div class="col-lg-12">
 
                     <label>Age</label>
-                    <input type="number" name="age" class="form-control" placeholder="Enter your Age">
+                    <input type="number" name="age" class="form-control" placeholder="Enter your Age" value="{{$post->Age}}">
 
                          <br>
                         </div>

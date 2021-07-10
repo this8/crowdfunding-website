@@ -23,11 +23,11 @@ class PostController extends Controller
         } elseif (request('category') == 1004) {
             $posts = Post::WHERE('category_id', 1004)->get();
         }
-        
+
         return view('posts.index', [
-            'posts' => $posts, 
+            'posts' => $posts,
         ]);
-    }  
+    }
 
     public function create()
     {
@@ -38,7 +38,7 @@ class PostController extends Controller
         ]);
     }
 
- 
+
     public function store(Request $request)
     {
         $patient = $request->file("patient_pic");
@@ -46,7 +46,7 @@ class PostController extends Controller
         $repo = $request->file("med_repo");
 
         $image_patient_name = time().'_'.$patient->getClientOriginalName();
-        
+
         $docu_repo_name = time().'_'.$repo->getClientOriginalName();
 
         $patient->move(\public_path("patients/".$request->nic."/patient-profile-pic/"),$image_patient_name);
@@ -73,7 +73,7 @@ class PostController extends Controller
     public function show(Post $post)
     {
         return view('posts.show', [
-            'post' => $post, 
+            'post' => $post,
         ]);
     }
 
@@ -82,7 +82,7 @@ class PostController extends Controller
         $categories = Category::all();
 
         return view('posts.edit', [
-            'post' => $post, 
+            'post' => $post,
             'categories' => $categories,
         ]);
     }
@@ -91,7 +91,7 @@ class PostController extends Controller
     {
         $post->update([
             'category_id' => $request->categoryId,
-            'Age' => $request->age,
+            'Age' => $request->Age,
             'NIC_number' => $request->nic,
             'description' => $request->description,
             'phone_number' => $request->phoneNumber,
@@ -107,9 +107,9 @@ class PostController extends Controller
     {
         if (file_exists("patients/".$post->nic."/patient-profile-pic/".$post->patient_picture))
             unlink("patients/".$post->nic."/patient-profile-pic/".$post->patient_picture);
-    
+
         $post->delete();
-        
+
         return redirect('home');
     }
 }
