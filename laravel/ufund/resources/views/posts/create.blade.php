@@ -112,13 +112,13 @@
 
                     {{-- profile pic button--}}
                     <div class="col-lg-6">
-                        <input type="file" id="picFile" hidden="hidden" accept="image/*">
+                        <input type="file" id="picFile" hidden="hidden" name="patient_pic" accept="image/*">
                         <input type="button" class="btn filebtn" id="patientPic" value="upload patient picture">
                     </div>
 
                     {{-- report button --}}
                     <div class="col-lg-6">
-                        <input type="file" id="repoFile" hidden="hidden">
+                        <input type="file" id="repoFile" name="med_repo" hidden="hidden">
                         <input type="button" class="btn filebtn" id="medRepo" value="upload medical report">
 
                     </div>
