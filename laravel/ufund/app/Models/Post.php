@@ -14,7 +14,7 @@ class Post extends Model
     protected $fillable = [
         'Category',
         'NIC_number',
-        'age',
+        'Age',
         'description',
         'phone_number',
         'address',
