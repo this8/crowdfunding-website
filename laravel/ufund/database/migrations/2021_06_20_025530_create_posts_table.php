@@ -26,6 +26,9 @@ class CreatePostsTable extends Migration
             $table->date('required_date');
             $table->string('patient_picture');
             $table->string('med_report');
+            $table->string('bank_account_no');
+            $table->string('bank_name');
+            $table->string('branch_name');
             $table->timestamps();
 
             $table->foreign('user_id')->references('id')->on('users');

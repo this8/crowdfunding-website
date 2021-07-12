@@ -1,20 +1,20 @@
 body {
-    background-image: url("images/poster/doc.png");
+    background-image: url("images/poster/medi.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
 
 #ui {
-    background-color: rgb(16, 211, 178);
+    background-color: rgb(5, 5, 2);
     padding: 30px;
+    padding-right: 10px;
     margin-top: 50px;
     border-radius: 20px;
     opacity: 0.8;
 }
 
-#ui label,
-h1 {
+#ui label {
     color: #fff;
 }
 

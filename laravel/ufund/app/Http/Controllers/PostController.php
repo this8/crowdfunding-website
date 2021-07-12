@@ -64,6 +64,9 @@ class PostController extends Controller
         $post->required_date = $request->date;
         $post->patient_picture = $image_patient_name;
         $post->med_report = $docu_repo_name;
+        $post->bank_account_no=$request->acNum;
+        $post->bank_name=$request->bankName;
+        $post->branch_name=$request->brName;
 
         $post->save();
 
@@ -98,6 +101,9 @@ class PostController extends Controller
             'address' => $request->address,
             'donation_amount' => $request->rqAmount,
             'required_date' => $request->date,
+            'bank_account_no'=>$request->acNum,
+            'bank_name'=>$request->bankName,
+            'branch_name'=>$request->brName,
         ]);
 
         return redirect('home');
