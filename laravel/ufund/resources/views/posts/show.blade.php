@@ -66,8 +66,8 @@
         </div>
     </div><br><br>
 
-     <a href="/posts/{{$post->id}}/edit">edit</a>
-     <br>
+     <a href="/posts/{{$post->id}}/edit" class="btn btn-outline-primary">edit</a>
+     <br><br>
      <form action="/posts/{{$post->id}}" method="POST">
             @csrf
             @method('delete')

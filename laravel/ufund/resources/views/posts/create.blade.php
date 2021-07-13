@@ -1,10 +1,5 @@
 <!doctype html>
 <html lang="en">
-    <script>
-        finctoin inputFile(){
-            
-        }
-    </script>
 
 <head>
     <!-- Required meta tags -->
@@ -34,7 +29,7 @@
 
         <div class="col-lg-6">
             <div id="ui">
-                <form class="form-group text-center" method="POST" action="/posts" enctype="multipart/form-data">
+                <form class="form-group text-center" method="POST" action="/posts" enctype="multipart/form-data" name="form">
                 @csrf
                 <center>
                     <h1>Creating Posts</h1>
@@ -117,13 +112,13 @@
 
                     {{-- profile pic button--}}
                     <div class="col-lg-6">
-                        <input type="file" id="picFile" hidden="hidden" accept="image/*">
+                        <input type="file" id="picFile" hidden="hidden" name="patient_pic" accept="image/*">
                         <input type="button" class="btn filebtn" id="patientPic" value="upload patient picture">
                     </div>
 
                     {{-- report button --}}
                     <div class="col-lg-6">
-                        <input type="file" id="repoFile" hidden="hidden">
+                        <input type="file" id="repoFile" name="med_repo" hidden="hidden">
                         <input type="button" class="btn filebtn" id="medRepo" value="upload medical report">
 
                     </div>
@@ -148,7 +143,7 @@
                    
                 </div>
                 <br>
-                <input type="submit" name="Submit" value="Submit" class="btn btn-primary btn-block long_button">
+                <input type="submit" name="Submit" value="Submit" class="btn btn-primary btn-block long_button" onclick="validate()">
                 <input type="reset" name="reset" value="Reset" class="btn btn-danger btn-block long_button">
 
                 </form>
@@ -166,35 +161,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
-<script>
-    // profile pic
-    var profFile=document.getElementById("picFile");
-    var profBtn=document.getElementById("patientPic");
-    var profPath=document.getElementById("picName");
-
-    profBtn.addEventListener("click",function(){
-        profFile.click();
-    });
-
-    profFile.addEventListener("change",function(){
-        profPath.innerHTML=profFile.value;
-    });
-
-    //medical report 
-    var medFile=document.getElementById("repoFile");
-    var medBtn=document.getElementById("medRepo");
-    var medPath=document.getElementById("repoName");
-
-    medBtn.addEventListener("click",function(){
-        medFile.click();
-    });
-
-    medFile.addEventListener("change",function(){
-        medPath.innerHTML=medFile.value;
-    });
-
-    
-</script>
+<script src="{{asset("js/form.js")}}"></script>
 
 </body>
 
