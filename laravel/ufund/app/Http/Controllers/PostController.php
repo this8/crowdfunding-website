@@ -70,7 +70,7 @@ class PostController extends Controller
 
         $post->save();
 
-        return redirect('home');
+        return redirect('posts/'.$post->id);
     }
 
     public function show(Post $post)
@@ -106,7 +106,7 @@ class PostController extends Controller
             'branch_name'=>$request->brName,
         ]);
 
-        return redirect('home');
+        return redirect('posts/'.$post->id);
     }
 
     public function delete(Post $post)

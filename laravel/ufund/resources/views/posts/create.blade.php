@@ -12,6 +12,21 @@
 
     <link rel="stylesheet" href="{{ asset('css/form.css') }}">
     <title>create post</title>
+    <script> 
+        function phoneNumberCheck(phoneNumber)
+        {
+           var regEx = ^\+{0,2}([\-\. ])?(\(?\d{0,3}\))?([\-\. ])?\(?\d{0,3}\)?([\-\. ])?\d{3}([\-\. ])?\d{4};
+           if(phoneNumber.value.match(regEx))
+             {
+              return true;
+             }
+           else
+             {
+             alert("Please enter a valid phone number.");
+             return false;
+             }
+        }    
+        </script> 
 
 </head>
 
@@ -22,7 +37,7 @@
 <!-- creating post -->
 
 <div class="container">
-        <form class="form-group text-center" method="POST" action="/posts" enctype="multipart/form-data">
+        <form class="form-group text-center" name="form"  method="POST" action="/posts" enctype="multipart/form-data">
             
             @csrf
                 <div id="ui">
@@ -49,7 +64,7 @@
                                 <div class="col-lg-12">
             
                                         <label>Age</label>
-                                        <input type="number" name="age" class="form-control round_input" placeholder="Enter your Age">
+                                        <input type="text" name="age" class="form-control round_input" placeholder="Enter your Age" required>
             
                                         <br>
                                 </div>
@@ -61,21 +76,21 @@
                                         <a  class="alert-link">If patient is less than 16 years old,<br> Enter parent's NIC number</a>.
                                     </div>
                                     <label>Enter Your NIC number</label>
-                                    <input type="text" name="nic" class="form-control round_input" placeholder="Enter your NIC number.">
+                                    <input type="text" name="nic" class="form-control round_input" placeholder="Enter your NIC number." required>
                                 </div>
             
                                 <div class="col-lg-12">
                                     <br>
                                     <label>Description About patient</label>
             
-                                    <textarea class="form-control round_textarea" cols="30" rows="4" name="description"></textarea>
+                                    <textarea class="form-control round_textarea" cols="30" rows="4" name="description" required></textarea>
                                     <br>
                                 </div>
             
                                 <div class="col-lg-12">
                                     <label>Address</label>
             
-                                    <textarea class="form-control round_textarea" cols="30" rows="4" name="address"></textarea>
+                                    <textarea class="form-control round_textarea" cols="30" rows="4" name="address" required></textarea>
                                     <br>
                                 </div>
             
@@ -86,7 +101,7 @@
                             <div class="row">    
                                 <div class="col-lg-12">
                                     <label>Phone Number</label>
-                                    <input type="number" name="phoneNumber" class="form-control round_input" placeholder="Enter your phone number..">
+                                    <input type="text" name="phoneNumber" class="form-control round_input" placeholder="Enter your phone number.." required>
             
                                     <br>
                                 </div>                            
@@ -94,7 +109,7 @@
                                 <div class="col-lg-6">
                                     <label>Required Donation Amount</label>
             
-                                    <input type="number" name="rqAmount"  class="form-control round_input" placeholder="Enter donation amount..">
+                                    <input type="text" name="rqAmount"  class="form-control round_input" placeholder="Enter donation amount.." required>
             
                                     <br>
                                 </div>
@@ -102,14 +117,14 @@
                                 <div class="col-lg-6">
                                     <label>Required date</label>
             
-                                    <input type="date" name="date" class="form-control round_input" placeholder="Enter required date..">
+                                    <input type="date" name="date" class="form-control round_input" placeholder="Enter required date.." required>
                                     <br>
                                 </div>            
                                 
                                 <div class="col-lg-12">
             
                                     <label>Bank Name</label>
-                                    <input type="text" name="bankName" class="form-control round_input" placeholder="Enter your Bank name">
+                                    <input type="text" name="bankName" class="form-control round_input" placeholder="Enter your Bank name" required>
         
                                     <br>
                                 </div>
@@ -117,7 +132,7 @@
                                 <div class="col-lg-12">
             
                                     <label>Bank Account Number</label>
-                                    <input type="text" name="acNum" class="form-control round_input" placeholder="Enter your Bank number">
+                                    <input type="text" name="acNum" class="form-control round_input" placeholder="Enter your Bank number" required>
         
                                     <br>
                                 </div>
@@ -125,9 +140,9 @@
                                 <div class="col-lg-12">
             
                                     <label>Branch Name</label>
-                                    <input type="text" name="brName" class="form-control round_input" placeholder="Enter your Branch Name of Bank">
+                                    <input type="text" name="brName" class="form-control round_input" placeholder="Enter your Branch Name of Bank" required>
     
-                                    <br>
+                                    <br> <br><br><br><br>
                                 </div>
 
                                 <div class="col-lg-12">
@@ -136,7 +151,7 @@
 
                                 {{-- profile pic button--}}
                                 <div class="col-lg-6">
-                                    <input type="file" name="patient_pic" id="picFile" hidden="hidden" accept="image/*">
+                                    <input type="file" name="patient_pic" id="picFile" hidden="hidden" accept="image/*" required>
                                     <input type="button" class="btn filebtn"  id="patientPic" value="upload patient picture">
                                 </div>
 
@@ -153,7 +168,7 @@
                                 <div class="col-lg-6">
                                     <br>
                                     <input type="file" id="repoFile" 
-                                    name="med_repo" hidden="hidden">
+                                    name="med_repo" hidden="hidden" required>
                                     <input type="button" class="btn filebtn" id="medRepo" value="upload medical report">
             
                                 </div>
@@ -177,7 +192,7 @@
                     </div>
                     
                     <center>
-                        <input type="submit" style="width:80%;" name="Submit" value="Submit" class="btn btn-primary btn-block long_button">
+                        <input type="submit" style="width:80%;" name="Submit" value="Submit" class="btn btn-primary btn-block long_button" onclick="validate()">
                         <input type="reset" style="width:80%;" name="reset" value="Reset" class="btn btn-danger btn-block long_button">
                     </center>
                     
