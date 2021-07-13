@@ -14,7 +14,7 @@ class Post extends Model
     protected $fillable = [
         'Category',
         'NIC_number',
-        'age',
+        'Age',
         'description',
         'phone_number',
         'address',
@@ -22,6 +22,9 @@ class Post extends Model
         'required_date',
         'patient_picture',
         'med_report',
+        'bank_account_no',
+        'bank_name',
+        'branch_name',
     ];
 
     public function category(){
