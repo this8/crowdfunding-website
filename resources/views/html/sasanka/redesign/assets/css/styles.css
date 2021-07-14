@@ -88,3 +88,26 @@ body{
   color: var(--text-color);
   line-height: 1.6;
 }
+
+h1,h2,h3,ul,p{
+    margin: 0;
+  }
+  
+  h1,h2,h3{
+    font-weight: var(--font-semi-bold);
+    color: var(--title-color);
+  }
+  
+  ul{
+    padding: 0;
+    list-style: none;
+  }
+  
+  a{
+    text-decoration: none;
+  }
+  
+  img{
+    max-width: 100%;
+    height: auto;
+  }
