@@ -33,7 +33,7 @@
                 @csrf
                 @method('PUT')
                 <center>
-                    <h1>Creating Posts</h1>
+                    <h1>Edit Post</h1>
                 </center>
 
                 <div class="row">
@@ -41,29 +41,36 @@
                     <div class="col-lg-12">
                         <label> Category </label>
                         <select class="form-control" name="categoryId">
-                            @foreach ($categories as $category)
-                                    <option value="{{$category->id}}">{{$category->name}}</option>
-                            @endforeach
+
+                            <option value="{{$post->category->id}}" selected>{{$post->category->name}}</option>
+                            <option value="1000">Heart</option>
+                            <option value="1001">Cancer</option>
+                            <option value="1002">Vision</option>
+                            <option value="1003">Infants</option>
+                            <option value="1004">Other</option>
                         </select>
                     </div>
 
                     <div class="col-lg-12">
                         <br>
-                        <br> <br>
 
                 <div class="col-lg-12">
 
                     <label>Age</label>
                     <input type="number" name="age" class="form-control" placeholder="Enter your Age" value="{{$post->Age}}">
 
+                    <p style="color: red; text-align: left;">{{$errors->first('Age')}}</p>
+
                          <br>
                         </div>
 
                         <div class="alert alert-danger" role="alert">
-                            <a  class="alert-link">If patient is less than 16 years old,<br> Enter parent's NIC number</a>.
+                            <a  class="alert-link">If patient is less than 16 years old,<br> Enter parent's NIC number.</a>
                         </div>
                         <label>Enter Your NIC number</label>
                         <input type="text" name="nic" class="form-control round_input" placeholder="Enter your NIC number." value="{{$post->NIC_number}}">
+
+
                     </div>
 
                     <div class="col-lg-12">

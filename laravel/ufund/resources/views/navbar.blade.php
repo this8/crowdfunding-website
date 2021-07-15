@@ -20,7 +20,7 @@
                     <a class="dropdown-item" href="/posts/?category=1000">Heart</a>
                     <a class="dropdown-item" href="/posts/?category=1001">Cancer</a>
                     <a class="dropdown-item" href="/posts/?category=1002">Vision Problem</a>
-                    <a class="dropdown-item" href="/posts/?category=1003">infants</a>              
+                    <a class="dropdown-item" href="/posts/?category=1003">infants</a>
                     <a class="dropdown-item" href="/posts/?category=1004">Other</a>
                 </div>
             </li>
@@ -28,7 +28,7 @@
                 <a class="nav-link" href="#">About us</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="posts/create">Create post</a>
+                <a class="nav-link" href="/posts/create">Create post</a>
             </li>
             <li class="nav-item dropdown">
 {{--                <form method="POST" action="{{ route('logout') }}">--}}

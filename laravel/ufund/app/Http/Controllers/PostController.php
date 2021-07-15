@@ -41,6 +41,19 @@ class PostController extends Controller
 
     public function store(Request $request)
     {
+        $request->validate([
+            "category_id" => "required",
+            "NIC_number" => "required",
+            "Age" => "required",
+            "description" => "required",
+            "phone_number" => "required",
+            "address" => "required",
+            "donation_amount" => "required",
+            "required_date" => "required",
+            "patient_picture" => "required",
+            "med_report" => "required"
+        ]);
+
         $patient = $request->file("patient_pic");
 
         $repo = $request->file("med_repo");
@@ -67,7 +80,7 @@ class PostController extends Controller
 
         $post->save();
 
-        return redirect('home');
+        return redirect('/posts/?category=' . $request->categoryId);
     }
 
     public function show(Post $post)
@@ -89,18 +102,28 @@ class PostController extends Controller
 
     public function update(Request $request, Post $post)
     {
-        $post->update([
-            'category_id' => $request->categoryId,
-            'Age' => $request->Age,
-            'NIC_number' => $request->nic,
-            'description' => $request->description,
-            'phone_number' => $request->phoneNumber,
-            'address' => $request->address,
-            'donation_amount' => $request->rqAmount,
-            'required_date' => $request->date,
+        $request->validate([
+            "category_id" => "required",
+            "NIC_number" => "required",
+            "Age" => "required",
+            "description" => "required",
+            "phone_number" => "required",
+            "address" => "required",
+            "donation_amount" => "required",
+            "required_date" => "required",
         ]);
 
-        return redirect('home');
+        $post->category_id = $request->categoryId;
+        $post->NIC_number = $request->nic;
+        $post->Age = $request->age;
+        $post->description = $request->description;
+        $post->phone_number = $request->phoneNumber;
+        $post->address = $request->address;
+        $post->donation_amount = $request->rqAmount;
+        $post->required_date = $request->date;
+        $post->save();
+
+        return redirect('/posts/?category=' . $request->categoryId);
     }
 
     public function delete(Post $post)

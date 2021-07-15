@@ -39,22 +39,27 @@
                     <div class="col-lg-12">
                         <label> Category </label>
                         <select class="form-control" name="categoryId">
-                            
+                            <option>Select Category</option>
                             @foreach ($categories as $category)
                                 <option value="{{ $category->id }}"> {{ $category->name }} </option>
                             @endforeach
 
                         </select>
+
+                        <p style="color: red; text-align: left;">{{$errors->first('category_id')}}</p>
+
                     </div>
 
                     <br> <br>
 
                     <div class="col-lg-12">
 
-                            <label>Age</label>
-                            <input type="number" name="age" class="form-control" placeholder="Enter your Age">
+                        <label>Age</label>
+                        <input type="number" name="age" class="form-control" placeholder="Enter your Age" value="{{ old('age') }}">
 
-                            <br>
+                        <p style="color: red; text-align: left;">{{$errors->first('Age')}}</p>
+
+                        <br>
                     </div>
 
                     <div class="col-lg-12">
@@ -64,20 +69,28 @@
                             <a  class="alert-link">If patient is less than 16 years old,<br> Enter parent's NIC number</a>.
                         </div>
                         <label>Enter Your NIC number</label>
-                        <input type="text" name="nic" class="form-control round_input" placeholder="Enter your NIC number.">
+                        <input type="text" name="nic" class="form-control round_input" placeholder="Enter your NIC number." value="{{ old('nic') }}">
+
+                        <p style="color: red; text-align: left;">{{$errors->first('NIC_number')}}</p> //problem: displaying as n i c number
+
                     </div>
 
                     <div class="col-lg-12">
                         <br>
                         <label>Description About patient</label>
 
-                        <textarea class="form-control round_textarea" cols="30" rows="4" name="description"></textarea>
+                        <textarea class="form-control round_textarea" cols="30" rows="4" name="description">{{ old('description') }}</textarea>
+
+                        <p style="color: red; text-align: left;">{{$errors->first('description')}}</p>
+
                         <br>
                     </div>
 
                     <div class="col-lg-12">
                         <label>Phone number</label>
-                        <input type="number" name="phoneNumber" class="form-control round_input" placeholder="Enter your phone number..">
+                        <input type="number" name="phoneNumber" class="form-control round_input" placeholder="Enter your phone number.." value="{{ old('phoneNumber') }}">
+
+                        <p style="color: red; text-align: left;">{{$errors->first('phone_number')}}</p>
 
                         <br>
                     </div>
@@ -85,16 +98,21 @@
                     <div class="col-lg-12">
                         <label>Address</label>
 
-                        <textarea class="form-control round_textarea" cols="30" rows="4" name="address"></textarea>
+                        <textarea class="form-control round_textarea" cols="30" rows="4" name="address">{{ old('address') }}</textarea>
+
+                        <p style="color: red; text-align: left;">{{$errors->first('address')}}</p>
+
                         <br>
                     </div>
 
-                    
+
 
                     <div class="col-lg-6">
                         <label>Required Donation Amount</label>
 
-                        <input type="number" name="rqAmount"  class="form-control round_input" placeholder="Enter donation amount..">
+                        <input type="number" name="rqAmount"  class="form-control round_input" placeholder="Enter donation amount.." value="{{ old('rqAmount') }}">
+
+                        <p style="color: red; text-align: left;">{{$errors->first('donation_amount')}}</p>
 
                         <br>
                     </div>
@@ -102,7 +120,10 @@
                     <div class="col-lg-6">
                         <label>Required date</label>
 
-                        <input type="date" name="date" class="form-control round_input" placeholder="Enter required date..">
+                        <input type="date" name="date" class="form-control round_input" placeholder="Enter required date.." value="{{ old('date') }}">
+
+                        <p style="color: red; text-align: left;">{{$errors->first('required_date')}}</p>
+
                         <br>
                     </div>
 
@@ -112,11 +133,15 @@
 
                         <input type="file" name="patient_pic" class="uploadFile" accept="image/*">
 
+                        <p style="color: red; text-align: left;">{{$errors->first('patient_picture')}}</p>
+
                         <br><br>
                         @csrf
                         <label for="file-ip"  class="fileLabel">upload medical report</label>
 
                         <input type="file" name="med_repo" class="uploadFile">
+
+                        <p style="color: red; text-align: left;">{{$errors->first('med_report')}}</p>
 
                         <br><br>
                     </div>
