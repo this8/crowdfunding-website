@@ -22,6 +22,8 @@ class PostController extends Controller
             $posts = Post::WHERE('category_id', 1003)->get();
         } elseif (request('category') == 1004) {
             $posts = Post::WHERE('category_id', 1004)->get();
+        } else {
+            $posts = Post::all();
         }
         
         return view('posts.index', [
@@ -98,11 +100,8 @@ class PostController extends Controller
 
     public function edit(Post $post)
     {
-        $categories = Category::all();
-
         return view('posts.edit', [
             'post' => $post, 
-            'categories' => $categories,
         ]);
     }
 
