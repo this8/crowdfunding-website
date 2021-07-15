@@ -1,0 +1,17 @@
+.profileImage{
+   
+    border: solid black 2px;
+}
+
+.body-border{
+    width: 80%;
+    border: solid red 2px;
+    background-color: rgb(250, 237, 237);
+    padding-bottom: 30px;
+    margin-bottom: 40px;
+    
+}
+
+
+
+
