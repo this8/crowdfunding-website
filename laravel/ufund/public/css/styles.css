@@ -401,6 +401,7 @@ img{
   padding: .5rem .625rem;
   border-radius: 1rem 0 1rem 0;
 }
+
 /* ====== Posters Cards====== */
 
 .card-frame{
@@ -418,6 +419,7 @@ img{
   padding: 1% 1% 1% 1%;
   border-radius: 10px 30px;
   transition: 0.5s;
+  width: 50%;
   max-width: fit-content;
 }
 .card-body {
@@ -428,8 +430,8 @@ img{
   display: inline-block;
   text-align: justify;
   padding: 0 5px 0 5px;
-  min-width: 250px;
-  max-width: 265px;
+  /* min-width: 250px;
+  max-width: 265px; */
   border-radius: 10px 30px;
 }
 .card-body-title {

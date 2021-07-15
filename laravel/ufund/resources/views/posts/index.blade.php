@@ -1,64 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/post.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+@extends('layouts.layout')
+@section('content')
 
+<!--========== Title ==========-->
+<section class="accessory section bd-container" id="accessory">
+    <h2 class="section-title">Posters</h2>
 
-    <title>Poster</title>
-</head>
-<body>
-
-@include('navbar')
-
-    <div class="card-deck">
+<!--========== Posters ==========-->
+<div class="card-frame">
 @foreach ($posts as $post)
-
-      <!-- Poster -->
-        <div class="card">
-          <div class="col-image">
-            <img class="card-img-left" src="{{ asset('patients/' . $post->NIC_number . '/patient-profile-pic/' . $post->patient_picture) }}" alt="Card image cap">
+    <div class="card-bodybg">
+        <div class="col-image">
+            <img class="card-bodybg-img-left" src="{{ asset('patients/' . $post->NIC_number . '/patient-profile-pic/' . $post->patient_picture) }}" alt="Profile picture">
             <h4 class="card-name">{{ $post->user->name }}</h4>
-          </div>
-          <div class="card-body">
-            <!-- Components -->
+        </div>
+        <div class="card-body">
+            <!--=== Components ===-->
             <h6 class="card-body-title">Card title</h6>
             <table class="card-items">
-              <tr>
+            <tr>
                 <td>Age:</td>
                 <td>{{ $post->Age }}</td>
-              </tr>
-              <tr>
+            </tr>
+            <tr>
                 <td>NIC_number:</td>
                 <td>{{ $post->NIC_number }}</td>
-              </tr>
-              <tr>
+            </tr>
+            <tr>
                 <td>Required date:</td>
                 <td>{{ $post->required_date }}</td>
-              </tr>
-              <tr>
+            </tr>
+            <tr>
                 <td>Required amount:</td>
                 <td>{{ $post->donation_amount }}</td>
-              </tr>
+            </tr>
             </table>
-            <br>
-            <!-- progress bar -->
-            <div class="w3-light-grey w3-round-xlarge">
-              <div class="w3-container w3-blue w3-round-xlarge" style="width: 50%;">50%</div>
-            </div>
             <!-- More detail button -->
             <div class="btn-detail">
-              <button class="button-more" name="More-details">
-                <a class="link-" href="/posts/{{$post->id}}">More Details</a></button>
+            <button class="button-more" name="More-details">
+                <a class="link-btn" href="/posts/{{$post->id}}">More Details</a></button>
             </div>
         </div>
-        </div>
-      <!-- End poster -->
-  @endforeach  
-      </div>     
-       
-</body>
-</html>
+    </div>
+@endforeach
+</div>
+    <!-- End poster -->
+</section>
+
+@endsection

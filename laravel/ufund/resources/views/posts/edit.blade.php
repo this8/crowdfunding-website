@@ -17,21 +17,20 @@
             @csrf
             @method('PUT')
                 <div id="ui">
-                    <center>
-                        <h1 style="color: red">Creating Post</h1>
-                    </center>
+                        <h1 style="color: red; text-align: center;">Creating Post</h1>
                     <div class="row">
                         <div class="col-lg-6">
         
                             <div class="row">
                                 <div class="col-lg-12">
                                     <label> Category </label>
-                                    <select class="form-control round_input" name="categoryId">
-                                        
-                                        @foreach ($categories as $category)
-                                            <option value="{{ $category->id }}"> {{ $category->name }} </option>
-                                        @endforeach
-            
+                                    <select class="form-control" name="categoryId">
+                                        <option value="{{$post->category->id}}" selected>{{$post->category->name}}</option>
+                                        <option value="1000">Heart</option>
+                                        <option value="1001">Cancer</option>
+                                        <option value="1002">Vision</option>
+                                        <option value="1003">Infants</option>
+                                        <option value="1004">Other</option>
                                     </select>
                                 </div>
             

@@ -38,25 +38,25 @@
                 <div class="categories__data">
                     <!-- <img src="assets/img/categories1.png" alt="" class="categories__img"> -->
                     <h3 class="categories__title">Blood Dialysis</h3>
-                    <a href="#" class="button button-link">Donate Now</a>
+                    <a href="/posts/?category=1000" class="button button-link">Donate Now</a>
                 </div>
 
                 <div class="categories__data">
                     <!-- <img src="assets/img/categories2.png" alt="" class="categories__img"> -->
                     <h3 class="categories__title">Kidney Transplantation</h3>
-                    <a href="#" class="button button-link">Donate Now</a>
+                    <a href="/posts/?category=1001" class="button button-link">Donate Now</a>
                 </div>
 
                 <div class="categories__data">
                     <!-- <img src="assets/img/categories3.png" alt="" class="categories__img"> -->
                     <h3 class="categories__title">Coronary Angiogram</h3>
-                    <a href="#" class="button button-link">Donate Now</a>
+                    <a href="/posts/?category=1002" class="button button-link">Donate Now</a>
                 </div>
 
                 <div class="categories__data">
                     <!-- <img src="assets/img/categories2.png" alt="" class="categories__img"> -->
                     <h3 class="categories__title">Bone Marrow Transplantation</h3>
-                    <a href="#" class="button button-link">Donate Now</a>
+                    <a href="/posts/?category=1003" class="button button-link">Donate Now</a>
                 </div>
 
             </div>
