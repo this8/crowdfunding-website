@@ -13,5 +13,24 @@
 }
 
 
+td{
+    color: #5b5757;
+    font-size: 20px;
+}
+
+.btn{
+    width: 300px;
+    
+}
+
+p{
+    background-color: white;
+    color:#5b5757; width:60%; 
+    min-height:200px; 
+    border:solid 2px red;  
+    text-align:left;
+   
+    padding: 15px;
+}
 
 
