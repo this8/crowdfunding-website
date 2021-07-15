@@ -1,5 +1,5 @@
 .profileImage{
-   
+    border-radius: 50%;
     border: solid black 2px;
 }
 
@@ -9,7 +9,7 @@
     background-color: rgb(250, 237, 237);
     padding-bottom: 30px;
     margin-bottom: 40px;
-    
+    border-radius: 40px;
 }
 
 
@@ -20,7 +20,7 @@ td{
 
 .btn{
     width: 300px;
-    
+    border-radius: 20px;
 }
 
 p{
@@ -29,7 +29,7 @@ p{
     min-height:200px; 
     border:solid 2px red;  
     text-align:left;
-   
+    border-radius: 40px;
     padding: 15px;
 }
 
