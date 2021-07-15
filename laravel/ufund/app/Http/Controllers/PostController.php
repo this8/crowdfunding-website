@@ -41,6 +41,22 @@ class PostController extends Controller
  
     public function store(Request $request)
     {
+        $request->validate([
+            "category_id" => "required",
+            "NIC_number" => "required",
+            "Age" => "required",
+            "description" => "required",
+            "phone_number" => "required",
+            "address" => "required",
+            "donation_amount" => "required",
+            "required_date" => "required",
+            "patient_picture" => "required",
+            "med_report" => "required",
+            "bank_account_no" => "required",
+            "bank_name" => "required",
+            "branch_name" => "required"
+        ]);
+
         $patient = $request->file("patient_pic");
 
         $repo = $request->file("med_repo");
@@ -92,6 +108,20 @@ class PostController extends Controller
 
     public function update(Request $request, Post $post)
     {
+        $request->validate([
+            "category_id" => "required",
+            "NIC_number" => "required",
+            "Age" => "required",
+            "description" => "required",
+            "phone_number" => "required",
+            "address" => "required",
+            "donation_amount" => "required",
+            "required_date" => "required",
+            "bank_account_no" => "required",
+            "bank_name" => "required",
+            "branch_name" => "required"
+        ]);
+
         $post->update([
             'category_id' => $request->categoryId,
             'Age' => $request->age,
