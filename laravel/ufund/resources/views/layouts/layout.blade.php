@@ -26,11 +26,18 @@
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                    <li class="nav__item"><a href="home" class="nav__link active-link">Home</a></li>
                     <li class="nav__item"><a href="#donate" class="nav__link">Donate</a></li>
                     <li class="nav__item"><a href="#categories" class="nav__link">Categories</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">Register/Login</a></li>
-                    
+                    <li class="nav__item">
+                        <form method="POST" action="{{ route('logout') }}">
+                            @csrf
+                            <a class="nav__link" href="{{ route('logout') }}"
+                            onclick="event.preventDefault();this.closest('form').submit();">
+                            {{ __('Logout') }}
+                            </a>
+                        </form>
+                    </li>
                     <li><i class='bx bx-toggle-left change-theme' id="theme-button"></i></li>
                 </ul>
             </div>
