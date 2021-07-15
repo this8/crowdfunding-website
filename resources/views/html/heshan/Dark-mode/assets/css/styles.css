@@ -401,59 +401,64 @@ img{
   padding: .5rem .625rem;
   border-radius: 1rem 0 1rem 0;
 }
-/* ======Cards====== */
+/* ====== Posters Cards====== */
 
 .card-frame{
   margin:  2% auto;
   max-width: 1000px;
-  max-height: 400px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
   gap: 20px;
   font-family:  var(--body-font);
 }
 .card-bodybg {
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
   display: flex;
-  background: var(--container-color);
-  padding: 10px 5px 10px 5px;
+  background: var(--first-color-comments);
+  padding: 1% 1% 1% 1%;
   border-radius: 10px 30px;
   transition: 0.5s;
-  max-width: 500px;
-}
-.card-img-left{
-  width: 200px;
-  display: block;  
-  max-width: 200px;
-  height: 180px;
+  max-width: fit-content;
 }
 .card-body {
   line-height: 1.5;
   font-size: 0.9em;
-  margin-left: 3%;
-  background: var(--first-color-comments);
+  margin: 1% 2% 1% 1%;
+  background: var(--container-color);
   display: inline-block;
   text-align: justify;
-  padding-left: 5px;
+  padding: 0 5px 0 5px;
   min-width: 250px;
+  max-width: 265px;
   border-radius: 10px 30px;
 }
 .card-body-title {
   font-size: 1.2em;
-  color: #fff;;
+  color: var(--title-color);
 }
 .col-image {
-  margin-left: 10px;
+  margin: 1% 1% 1% 1%;
+  max-width: 202px;
+  max-height: 202px;
+  align-items: center;
+  background-color: white;
+}
+.card-bodybg-img-left{
+  width: 200px;
+  display: block;  
   max-width: 200px;
+  height: 200px;
 }
 .card-name {
   text-align: center;
   font-size: 1.2em;
+  color: #fff;
+  padding-top: 10px;
 }
 .card-items {
   list-style: none;
   margin-top: 5px;
-  color: #fff;
+  color: var(--title-color);
 }
 .card-footer {
   display: flex;
@@ -468,12 +473,12 @@ img{
 }
 .button-more {
   margin-top: 10px;
-  border-radius: 5px;
+  border-radius: 8px;
   width: 100px;
   height: 30px;
-  transition: 1s;
+  transition: 0.5s;
   background-color: var(--container-color);
-  margin-bottom: 1%;
+  margin-bottom: 3%;
 }
 .link-btn{
   color: var(--title-color);
