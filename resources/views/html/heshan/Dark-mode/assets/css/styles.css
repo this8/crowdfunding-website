@@ -401,12 +401,11 @@ img{
   padding: .5rem .625rem;
   border-radius: 1rem 0 1rem 0;
 }
-/* ======Cards====== */
+/* ====== Posters Cards====== */
 
 .card-frame{
   margin:  2% auto;
   max-width: 1000px;
-  max-height: 400px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
   gap: 20px;
@@ -415,11 +414,11 @@ img{
 .card-bodybg {
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
   display: flex;
-  background: var(--container-color);
+  background: var(--first-color-comments);
   padding: 10px 5px 10px 5px;
   border-radius: 10px 30px;
   transition: 0.5s;
-  max-width: 500px;
+  max-width: fit-content;
 }
 .card-img-left{
   width: 200px;
@@ -430,30 +429,32 @@ img{
 .card-body {
   line-height: 1.5;
   font-size: 0.9em;
-  margin-left: 3%;
-  background: var(--first-color-comments);
+  margin: 1% 2% 1% 1%;
+  background: var(--container-color);
   display: inline-block;
   text-align: justify;
-  padding-left: 5px;
+  padding: 0 5px 0 5px;
   min-width: 250px;
+  max-width: 265px;
   border-radius: 10px 30px;
 }
 .card-body-title {
   font-size: 1.2em;
-  color: #fff;;
+  color: var(--title-color);
 }
 .col-image {
-  margin-left: 10px;
+  margin: 1% 1% 1% 1%;
   max-width: 200px;
 }
 .card-name {
   text-align: center;
   font-size: 1.2em;
+  color: #fff;
 }
 .card-items {
   list-style: none;
   margin-top: 5px;
-  color: #fff;
+  color: var(--title-color);
 }
 .card-footer {
   display: flex;
@@ -473,7 +474,7 @@ img{
   height: 30px;
   transition: 1s;
   background-color: var(--container-color);
-  margin-bottom: 1%;
+  margin-bottom: 5px;
 }
 .link-btn{
   color: var(--title-color);
