@@ -11,7 +11,7 @@
                 <div class="home__data">
                     <h1 class="home__title">Collect Funds For Medical Bills</h1>
                     <p class="home__description">Sometimes you can't afford your medical bills . . . . . . <b>right???</b> <br>So we decided to make a platform for you to connect with donators directly. <b>:)</b></p>
-                    <a href="#" class="button">Create a Campaign</a>
+                    <a href="/posts/create" class="button">Create a Campaign</a>
                 </div>   
             </div>
         </section>
@@ -22,7 +22,7 @@
                 <div class="donate__data">
                     <h2 class="section-title-center">Donation Is The Best Gift <br> You Can Give</h2>
                     <p class="donate__description">Donating money is the best gift you can give to the people who need it most. <br>Give life and make a smile face on people who are unable to pay for their medical bills.</p>
-                    <a href="#" class="button">Donate Now</a>
+                    <a href="/posts" class="button">Donate Now</a>
                 </div>
 
                 <div class="donate__img">

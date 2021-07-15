@@ -1,38 +1,13 @@
-<!doctype html>
-<html lang="en">
-
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+@extends('layouts.layout')
+@section('bs4')
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="{{ asset('css/form.css') }}">
-    <title>create post</title>
-    <script> 
-        function phoneNumberCheck(phoneNumber)
-        {
-           var regEx = ^\+{0,2}([\-\. ])?(\(?\d{0,3}\))?([\-\. ])?\(?\d{0,3}\)?([\-\. ])?\d{3}([\-\. ])?\d{4};
-           if(phoneNumber.value.match(regEx))
-             {
-              return true;
-             }
-           else
-             {
-             alert("Please enter a valid phone number.");
-             return false;
-             }
-        }    
-        </script> 
-
-</head>
-
-<body>
-
-    @include('navbar');
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
+          crossorigin="anonymous"
+    >
+@endsection
+@section('content')
 
 <!-- creating post -->
 
@@ -206,6 +181,4 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 <script src="{{asset('js/form.js')}}"></script>
-</body>
-
-</html>
+@endsection

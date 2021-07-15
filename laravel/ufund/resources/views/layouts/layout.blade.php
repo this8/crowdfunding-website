@@ -6,10 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- ICONS -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-
     <!-- CSS -->
     <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
-
+    @yield('bs4')
     <title>uFund|CrowdFunding</title>
 </head>
 <body>
@@ -21,7 +20,7 @@
     <!-- HEADER -->
     <header class="l-header" id="header">
         <nav class="nav bd-container">
-            <div class="ufund__logo"><img src="css/images/logo.png" alt="ufund logo"></div>
+            <div class="ufund__logo"><img src="/css/images/logo.png" alt="ufund logo"></div>
             <a href="#" class="nav__logo">uFund</a>
 
             <div class="nav__menu" id="nav-menu">
