@@ -74,6 +74,7 @@
                   <div class="col-xl-4">
                     <h1>Required Donation Details</h1>
                     <table border="1px"> 
+                      <tr> <td> Categoty</td> <td> {{$post->category->name}}</td> </tr>
                       <tr> <td> Donation Amount</td> <td> {{$post->donation_amount}}</td> </tr>
                       <tr> <td> Required Date</td> <td> &nbsp; Before in {{$post->required_date}},<br> &nbsp; I need this donation <br> &nbsp; for medical treatment.</td> </tr>
                     </table>
