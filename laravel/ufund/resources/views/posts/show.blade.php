@@ -6,22 +6,36 @@
           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
           crossorigin="anonymous"
     >
+    <link rel="stylesheet" href="{{ asset('css/show.css') }}">
 @endsection
 @section('content')
 
       <!-- Poster -->
         {{-- <div class=""> --}}
           <center>
-          <div class="body-border">
+          <div class="body-border" 
+          style="margin-top: 160px;
+          width: 80%;
+          border: solid red 2px;
+          padding-bottom: 30px;
+          margin-bottom: 40px;
+          border-radius: 40px;">
             
               <div class="col-image" style="margin-top: 30px">
-                <img class="profileImage col-md-12" style="width: 200px; height:200px;" src="{{ asset('patients/' . $post->NIC_number . '/patient-profile-pic/' . $post->patient_picture) }}" alt="Card image cap">
+                <img class="profileImage col-md-12" style="width: 200px; height:200px; border-radius: 50%;border: solid black 2px;" src="{{ asset('patients/' . $post->NIC_number . '/patient-profile-pic/' . $post->patient_picture) }}" alt="Card image cap">
                 <br><br>
                 <h4 class="card-name display-4" style="color: red"><b> {{$post->user->name}}</b> </h4>
               </div>
             
               <br><br>
-              <p style="">
+              <p 
+              style="background-color: white;
+              color:#5b5757; width:60%; 
+              min-height:200px; 
+              border:solid 2px red;  
+              text-align:left;
+              border-radius: 40px;
+              padding: 15px;">
                 {{$post->description}}
               </p>
 

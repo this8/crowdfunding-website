@@ -8,6 +8,7 @@
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <!-- CSS -->
     <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
+   
     @yield('bs4')
     <title>uFund|CrowdFunding</title>
 </head>
