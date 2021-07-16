@@ -23,7 +23,7 @@
                     </div>
                     <div class="col-lg-8">
                         <br><br>
-                        <img src="css/images/ufund.jpeg" width="90px" alt="uFund logo" style="margin-top: 10px">
+                        <img src="css/images/ufund_logo.svg" width="90px" alt="uFund logo" style="margin-top: 10px">
 
                     </div>
                 </div>
