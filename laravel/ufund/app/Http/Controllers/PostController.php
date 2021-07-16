@@ -22,6 +22,8 @@ class PostController extends Controller
             $posts = Post::WHERE('category_id', 1003)->get();
         } elseif (request('category') == 1004) {
             $posts = Post::WHERE('category_id', 1004)->get();
+        } else {
+            $posts = Post::all();
         }
         
         return view('posts.index', [
@@ -41,6 +43,22 @@ class PostController extends Controller
  
     public function store(Request $request)
     {
+        $request->validate([
+            "category_id" => "required",
+            "NIC_number" => "required",
+            "Age" => "required",
+            "description" => "required",
+            "phone_number" => "required",
+            "address" => "required",
+            "donation_amount" => "required",
+            "required_date" => "required",
+            "patient_picture" => "required",
+            "med_report" => "required",
+            "bank_account_no" => "required",
+            "bank_name" => "required",
+            "branch_name" => "required"
+        ]);
+
         $patient = $request->file("patient_pic");
 
         $repo = $request->file("med_repo");
@@ -82,16 +100,27 @@ class PostController extends Controller
 
     public function edit(Post $post)
     {
-        $categories = Category::all();
-
         return view('posts.edit', [
             'post' => $post, 
-            'categories' => $categories,
         ]);
     }
 
     public function update(Request $request, Post $post)
     {
+        $request->validate([
+            "category_id" => "required",
+            "NIC_number" => "required",
+            "Age" => "required",
+            "description" => "required",
+            "phone_number" => "required",
+            "address" => "required",
+            "donation_amount" => "required",
+            "required_date" => "required",
+            "bank_account_no" => "required",
+            "bank_name" => "required",
+            "branch_name" => "required"
+        ]);
+
         $post->update([
             'category_id' => $request->categoryId,
             'Age' => $request->age,
