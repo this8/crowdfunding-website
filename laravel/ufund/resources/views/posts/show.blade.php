@@ -6,6 +6,7 @@
           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
           crossorigin="anonymous"
     >
+    <link rel="stylesheet" href="{{ asset('css/show.css') }}">
 @endsection
 @section('content')
 
@@ -15,13 +16,21 @@
           <div class="body-border">
             
               <div class="col-image" style="margin-top: 30px">
-                <img class="profileImage col-md-12" style="width: 200px; height:200px;" src="{{ asset('patients/' . $post->NIC_number . '/patient-profile-pic/' . $post->patient_picture) }}" alt="Card image cap">
+                <img class="profileImage col-md-12"  src="{{ asset('patients/' . $post->NIC_number . '/patient-profile-pic/' . $post->patient_picture) }}" alt="Card image cap">
                 <br><br>
-                <h4 class="card-name display-4" style="color: red"><b> {{$post->user->name}}</b> </h4>
+                
               </div>
+              <h4 class="card-name display-4" style="color: red"><b> {{$post->user->name}}</b> </h4>
             
               <br><br>
-              <p style="">
+              <p 
+              style="background-color: white;
+              color:#5b5757; width:60%; 
+              min-height:200px; 
+              border:solid 2px red;  
+              text-align:left;
+              border-radius: 40px;
+              padding: 15px;">
                 {{$post->description}}
               </p>
 
@@ -55,7 +64,7 @@
               <div class="row">
                   <div class="col-xl-4">
                     <h1>Patient Details</h1>
-                    <table border="1px">
+                    <table border="1px" class="show-table">
 
                       <tr> <td>NIC number </td> <td>{{$post->NIC_number}}  </td> </tr>
                       <tr> <td> Age</td> <td> {{$post->Age}} </td> </tr>

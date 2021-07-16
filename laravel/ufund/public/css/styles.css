@@ -518,6 +518,10 @@ img{
   color: var(--title-color);
 }
 
+input{
+  border-color: black;
+}
+
 .center {
   justify-content: center;
 }
@@ -572,6 +576,33 @@ img{
   border-radius: 1200px;
   cursor: pointer;
 }
+/*========== show blade ==========*/
+
+
+.body-border{
+  margin-top: 160px;
+  width: 80%;
+  border: solid red 2px;
+  padding-bottom: 30px;
+  margin-bottom: 40px;
+  border-radius: 40px;
+  background-color: var(--container-color);
+  color: var(--title-color);
+}
+
+.body-border h1{
+  color: rgba(241, 91, 21, 0.973);
+}
+
+
+
+.profileImage{
+  width: 200px;
+  height:200px; 
+  border-radius: 50%;
+  border: solid black 2px;
+}
+
 
 /*========== comments GIFT ==========*/
 .comments{

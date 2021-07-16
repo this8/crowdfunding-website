@@ -1,36 +1,13 @@
-.profileImage{
-    border-radius: 50%;
-    border: solid black 2px;
-}
 
-.body-border{
-    width: 80%;
-    border: solid red 2px;
-    background-color: rgb(250, 237, 237);
-    padding-bottom: 30px;
-    margin-bottom: 40px;
-    border-radius: 40px;
-}
-
-
-td{
+/* td{
     color: #5b5757;
     font-size: 20px;
-}
+} */
 
 .btn{
     width: 300px;
     border-radius: 20px;
 }
 
-p{
-    background-color: white;
-    color:#5b5757; width:60%; 
-    min-height:200px; 
-    border:solid 2px red;  
-    text-align:left;
-    border-radius: 40px;
-    padding: 15px;
-}
 
 
