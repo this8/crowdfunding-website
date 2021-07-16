@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="{{asset('css/auth.css')}}">
 
-    <title>Document</title>
+    <title>uFund</title>
 </head>
 <body>
 

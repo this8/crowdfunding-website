@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
    
     @yield('bs4')
-    <title>uFund|CrowdFunding</title>
+    <title>uFund | CrowdFunding</title>
 </head>
 <body>
     <!-- SCROLL TOP -->
@@ -21,7 +21,7 @@
     <!-- HEADER -->
     <header class="l-header" id="header">
         <nav class="nav bd-container">
-            <div class="ufund__logo"><img src="/css/images/logo.png" alt="ufund logo"></div>
+            <div class="ufund__logo"><img src="/css/images/ufund_logo.png" alt="ufund logo"></div>
             <a href="#" class="nav__logo">uFund</a>
 
             <div class="nav__menu" id="nav-menu">
@@ -87,7 +87,7 @@
             </div>
         </div>
 
-        <p class="footer__copy">&#169; 2021 CSilluminati. All rights reserved</p>
+        <p class="footer__copy">&#169; 2021 CSilluminati. All rights reserved.</p>
     </footer>
 
     <!-- SCROLL REVEAL -->
