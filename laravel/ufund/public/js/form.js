@@ -24,13 +24,13 @@
        medPath.innerHTML=medFile.value;
    });
 
-   //validatin
+   //validation
 
    function validate(){
 
-        //catogory
-       if(form.categoryId.value=="1000"){
-            alert("Please select catogory");
+        //category
+       if(form.categoryId.value=="1"){
+            alert("Please select category");
             focus.form.categoryId;
             preventDefault();
        }

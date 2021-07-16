@@ -26,7 +26,7 @@
                                 <div class="col-lg-12">
                                     <label> Category </label>
                                     <select class="form-control round_input" name="categoryId">
-                                        
+                                        <option value="1">Select</option>
                                         @foreach ($categories as $category)
                                             <option value="{{ $category->id }}"> {{ $category->name }} </option>
                                         @endforeach
