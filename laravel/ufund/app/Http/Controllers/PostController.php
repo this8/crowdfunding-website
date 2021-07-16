@@ -108,17 +108,17 @@ class PostController extends Controller
     public function update(Request $request, Post $post)
     {
         $request->validate([
-            "category_id" => "required",
-            "NIC_number" => "required",
-            "Age" => "required",
-            "description" => "required",
-            "phone_number" => "required",
-            "address" => "required",
-            "donation_amount" => "required",
-            "required_date" => "required",
-            "bank_account_no" => "required",
-            "bank_name" => "required",
-            "branch_name" => "required"
+            'categoryId' => 'required',
+            'nic' => 'required',
+            'age' => 'required',
+            'description' => 'required',
+            'phoneNumber' => 'required',
+            'address' => 'required',
+            'rqAmount' => 'required',
+            'date' => 'required',
+            'acNum' => 'required',
+            'bankName' => 'required',
+            'brName' => 'required'
         ]);
 
         $post->update([
