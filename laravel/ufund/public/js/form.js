@@ -128,8 +128,6 @@
             alert("Please upload medical report");
 
         }
-
-
        
    }
 
