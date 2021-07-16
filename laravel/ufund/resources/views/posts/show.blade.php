@@ -13,19 +13,14 @@
       <!-- Poster -->
         {{-- <div class=""> --}}
           <center>
-          <div class="body-border" 
-          style="margin-top: 160px;
-          width: 80%;
-          border: solid red 2px;
-          padding-bottom: 30px;
-          margin-bottom: 40px;
-          border-radius: 40px;">
+          <div class="body-border">
             
               <div class="col-image" style="margin-top: 30px">
-                <img class="profileImage col-md-12" style="width: 200px; height:200px; border-radius: 50%;border: solid black 2px;" src="{{ asset('patients/' . $post->NIC_number . '/patient-profile-pic/' . $post->patient_picture) }}" alt="Card image cap">
+                <img class="profileImage col-md-12"  src="{{ asset('patients/' . $post->NIC_number . '/patient-profile-pic/' . $post->patient_picture) }}" alt="Card image cap">
                 <br><br>
-                <h4 class="card-name display-4" style="color: red"><b> {{$post->user->name}}</b> </h4>
+                
               </div>
+              <h4 class="card-name display-4" style="color: red"><b> {{$post->user->name}}</b> </h4>
             
               <br><br>
               <p 
@@ -69,7 +64,7 @@
               <div class="row">
                   <div class="col-xl-4">
                     <h1>Patient Details</h1>
-                    <table border="1px">
+                    <table border="1px" class="show-table">
 
                       <tr> <td>NIC number </td> <td>{{$post->NIC_number}}  </td> </tr>
                       <tr> <td> Age</td> <td> {{$post->Age}} </td> </tr>
