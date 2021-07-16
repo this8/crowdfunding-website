@@ -17,7 +17,7 @@
             @csrf
                 <div id="ui">
                     <center>
-                        <h1 style="color: red">Creating Post</h1>
+                        <h1 style="color: red">Creating Campaign</h1>
                     </center>
                     <div class="row">
                         <div class="col-lg-6">
