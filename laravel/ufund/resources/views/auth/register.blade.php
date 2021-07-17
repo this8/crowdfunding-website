@@ -9,7 +9,7 @@
         <!-- Name -->
         <div>
     
-            <x-input id="name" placeholder="Enter patient name" class=" inputs block mt-1 w-full  form-control" type="text" name="name" :value="old('name')" required autofocus />
+            <x-input id="name" placeholder="Enter user name" class=" inputs block mt-1 w-full  form-control" type="text" name="name" :value="old('name')" required autofocus />
         </div>
     
         <!-- Email Address -->
