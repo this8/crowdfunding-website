@@ -4,12 +4,12 @@
         <!-- HOME -->
         <section class="home" id="home">
             <div class="home__container bd-container bd-grid">
-                <div class="home__img">
-                    <!-- <img src="assets/img/home.png" alt=""> -->
+                <div class="home__img" style="max-width: 340px;">
+                    <img src="css/images/home.svg" alt="2 hands and heart">
                 </div>
 
                 <div class="home__data">
-                    <h1 class="home__title">Collect Funds For Medical Bills</h1>
+                    <h1 class="home__title">Crowdfunding For Medical Bills</h1>
                     <p class="home__description">Sometimes you can't afford your medical bills . . . . . . <b>right???</b> <br>So we decided to make a platform for you to connect with donators directly. <b>:)</b></p>
                     <a href="/posts/create" class="button">Create a Campaign</a>
                 </div>   
@@ -25,8 +25,8 @@
                     <a href="/posts" class="button">Donate Now</a>
                 </div>
 
-                <div class="donate__img">
-                    <!-- <img src="assets/img/donated.png" alt=""> -->
+                <div class="donate__img" style="max-width: 280px;">
+                    <img src="css/images/donate.svg" alt="dollar sign">
                 </div>
             </div>
         </section>
@@ -35,27 +35,28 @@
         <section class="categories section bd-container" id="categories">
             <h2 class="section-title">Give Donations <br> For These Categories</h2>
             <div class="categories__container bd-grid">
+
                 <div class="categories__data">
-                    <!-- <img src="assets/img/categories1.png" alt="" class="categories__img"> -->
+                    <img src="css/images/blood_dialysis.svg" alt="blood bag" class="categories__img">
                     <h3 class="categories__title">Blood Dialysis</h3>
                     <a href="/posts/?category=1000" class="button button-link">Donate Now</a>
                 </div>
 
                 <div class="categories__data">
-                    <!-- <img src="assets/img/categories2.png" alt="" class="categories__img"> -->
-                    <h3 class="categories__title">Kidney Transplantation</h3>
+                    <img src="css/images/cancer.svg" alt="" class="categories__img">
+                    <h3 class="categories__title">Cancer Patients</h3>
                     <a href="/posts/?category=1001" class="button button-link">Donate Now</a>
                 </div>
 
                 <div class="categories__data">
-                    <!-- <img src="assets/img/categories3.png" alt="" class="categories__img"> -->
-                    <h3 class="categories__title">Coronary Angiogram</h3>
+                    <img src="css/images/heart.svg" alt="" class="categories__img">
+                    <h3 class="categories__title">Heart Patients</h3>
                     <a href="/posts/?category=1002" class="button button-link">Donate Now</a>
                 </div>
 
                 <div class="categories__data">
-                    <!-- <img src="assets/img/categories2.png" alt="" class="categories__img"> -->
-                    <h3 class="categories__title">Bone Marrow Transplantation</h3>
+                    <img src="css/images/kidney.svg" alt="" class="categories__img">
+                    <h3 class="categories__title">Kidney Transplant</h3>
                     <a href="/posts/?category=1003" class="button button-link">Donate Now</a>
                 </div>
 
@@ -68,16 +69,16 @@
                 <div class="comments__content">
                     <h2 class="section-title-center comments__title">Write To Us</h2>
                     <p class="comments__description">We started this project for a university assignment. We need your valuable comments and suggestions to improve the website and to give a better service. Please send your comments and suggestions......</p>
-                    <form action="">
-                        <div class="comments__direction">
-                            <input type="text" placeholder="Your comments . . ." class="comments__input">
-                            <a href="#" class="button">Submit</a>
-                        </div>
-                    </form>
+                    
                 </div>
 
                 <div class="comments__img">
-                    <!-- <img src="assets/img/comments.png" alt=""> -->
+                    <form action="">
+                        <div class="comments__direction">
+                            <textarea rows="4" cols="50" placeholder="Your comments . . ." class="comments__input"></textarea>
+                            <a href="#" class="button" style="align-self: center;" >Submit</a>
+                        </div>
+                    </form>
                 </div>
             </div>
         </section>
