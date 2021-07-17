@@ -32,6 +32,7 @@
                                         @endforeach
             
                                     </select>
+                                    <p style="color: red; text-align: left;">{{$errors->first('category_id')}}</p>
                                 </div>
             
                                 <br> <br>
@@ -40,7 +41,9 @@
             
                                         <label>Age</label>
                                         <input type="text" name="age" class="form-control round_input" placeholder="Enter your Age . . ." required>
-            
+
+                                        <p style="color: red; text-align: left;">{{$errors->first('Age')}}</p>
+                                        
                                         <br>
                                 </div>
             
@@ -52,6 +55,9 @@
                                     </div>
                                     <label>Enter your NIC number</label>
                                     <input type="text" name="nic" class="form-control round_input" placeholder="Enter your NIC number . . ." required>
+
+                                    <p style="color: red; text-align: left;">{{$errors->first('NIC_number')}}</p>
+
                                 </div>
             
                                 <div class="col-lg-12">
@@ -59,6 +65,9 @@
                                     <label>Description about the patient</label>
             
                                     <textarea class="form-control round_textarea" cols="30" rows="4" name="description" required></textarea>
+                                    
+                                    <p style="color: red; text-align: left;">{{$errors->first('description')}}</p>
+
                                     <br>
                                 </div>
             
@@ -66,6 +75,9 @@
                                     <label>Address</label>
             
                                     <textarea class="form-control round_textarea" cols="30" rows="4" name="address" required></textarea>
+
+                                    <p style="color: red; text-align: left;">{{$errors->first('address')}}</p>
+
                                     <br>
                                 </div>
             
@@ -77,6 +89,8 @@
                                 <div class="col-lg-12">
                                     <label>Phone number</label>
                                     <input type="text" name="phoneNumber" class="form-control round_input" placeholder="Enter your phone number . . ." required>
+
+                                    <p style="color: red; text-align: left;">{{$errors->first('phone_number')}}</p>
             
                                     <br>
                                 </div>                            
@@ -85,6 +99,8 @@
                                     <label>Required donation amount</label>
             
                                     <input type="text" name="rqAmount"  class="form-control round_input" placeholder="Enter required amount . . ." required>
+
+                                    <p style="color: red; text-align: left;">{{$errors->first('donation_amount')}}</p>
             
                                     <br>
                                 </div>
@@ -93,6 +109,9 @@
                                     <label>Required date</label>
             
                                     <input type="date" name="date" class="form-control round_input" required>
+
+                                    <p style="color: red; text-align: left;">{{$errors->first('required_date')}}</p>
+
                                     <br>
                                 </div>            
                                 
@@ -100,6 +119,8 @@
             
                                     <label>Bank name</label>
                                     <input type="text" name="bankName" class="form-control round_input" placeholder="Enter your bank name . . ." required>
+
+                                    <p style="color: red; text-align: left;">{{$errors->first('bank_name')}}</p>
         
                                     <br>
                                 </div>
@@ -108,6 +129,8 @@
             
                                     <label>Bank account number</label>
                                     <input type="text" name="acNum" class="form-control round_input" placeholder="Enter your bank account number . . ." required>
+
+                                    <p style="color: red; text-align: left;">{{$errors->first('bank_account_no')}}</p>
         
                                     <br>
                                 </div>
@@ -116,8 +139,10 @@
             
                                     <label>Branch name</label>
                                     <input type="text" name="brName" class="form-control round_input" placeholder="Enter your branch name of the bank . . ." required>
+
+                                    <p style="color: red; text-align: left;">{{$errors->first('branch_name')}}</p>
     
-                                    <br> <br><br><br>
+                                    <br> <br><br>
                                 </div>
 
                                 <div class="col-lg-12">
@@ -136,6 +161,8 @@
                                     <span id="picName" style="color: red">
                                         No file selected yet
                                     </span>
+
+                                    <p style="color: red; text-align: left;">{{$errors->first('patient_picture')}}</p>
             
                                 </div>
             
@@ -154,6 +181,8 @@
                                     <span id="repoName" style="color: red">
                                         No file selected yet
                                     </span>
+
+                                    <p style="color: red; text-align: left;">{{$errors->first('med_report')}}</p>
             
                                 </div>
 
