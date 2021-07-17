@@ -17,7 +17,7 @@
             @csrf
             @method('PUT')
                 <div id="ui">
-                        <h1 style="color: red; text-align: center;">Creating Campaign</h1>
+                        <h1 style="color: red; text-align: center;">Edit Campaign</h1>
                     <div class="row">
                         <div class="col-lg-6">
         
