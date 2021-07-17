@@ -17,16 +17,16 @@
             @csrf
                 <div id="ui">
                     <center>
-                        <h1 style="color: red">Creating Campaign</h1>
+                        <h1 style="color: red">Create a Campaign</h1>
                     </center>
                     <div class="row">
                         <div class="col-lg-6">
         
                             <div class="row">
                                 <div class="col-lg-12">
-                                    <label> Category </label>
+                                    <label>Category</label>
                                     <select class="form-control round_input" name="categoryId">
-                                        <option value="1">Select</option>
+                                        <option value="1">Select Category</option>
                                         @foreach ($categories as $category)
                                             <option value="{{ $category->id }}"> {{ $category->name }} </option>
                                         @endforeach
@@ -39,7 +39,7 @@
                                 <div class="col-lg-12">
             
                                         <label>Age</label>
-                                        <input type="text" name="age" class="form-control round_input" placeholder="Enter your Age" required>
+                                        <input type="text" name="age" class="form-control round_input" placeholder="Enter your Age . . ." required>
             
                                         <br>
                                 </div>
@@ -48,15 +48,15 @@
                                     <br>
             
                                     <div class="alert alert-danger" style="border-radius: 20px; " role="alert">
-                                        <a  class="alert-link">If patient is less than 16 years old,<br> Enter parent's NIC number</a>.
+                                        <a  class="alert-link">If the patient is less than 16 years old,<br> Enter parent's NIC number</a>.
                                     </div>
-                                    <label>Enter Your NIC number</label>
-                                    <input type="text" name="nic" class="form-control round_input" placeholder="Enter your NIC number." required>
+                                    <label>Enter your NIC number</label>
+                                    <input type="text" name="nic" class="form-control round_input" placeholder="Enter your NIC number . . ." required>
                                 </div>
             
                                 <div class="col-lg-12">
                                     <br>
-                                    <label>Description About patient</label>
+                                    <label>Description about the patient</label>
             
                                     <textarea class="form-control round_textarea" cols="30" rows="4" name="description" required></textarea>
                                     <br>
@@ -75,16 +75,16 @@
                         <div class="col-lg-6">
                             <div class="row">    
                                 <div class="col-lg-12">
-                                    <label>Phone Number</label>
-                                    <input type="text" name="phoneNumber" class="form-control round_input" placeholder="Enter your phone number.." required>
+                                    <label>Phone number</label>
+                                    <input type="text" name="phoneNumber" class="form-control round_input" placeholder="Enter your phone number . . ." required>
             
                                     <br>
                                 </div>                            
             
                                 <div class="col-lg-6">
-                                    <label>Required Donation Amount</label>
+                                    <label>Required donation amount</label>
             
-                                    <input type="text" name="rqAmount"  class="form-control round_input" placeholder="Enter donation amount.." required>
+                                    <input type="text" name="rqAmount"  class="form-control round_input" placeholder="Enter required amount . . ." required>
             
                                     <br>
                                 </div>
@@ -92,32 +92,32 @@
                                 <div class="col-lg-6">
                                     <label>Required date</label>
             
-                                    <input type="date" name="date" class="form-control round_input" placeholder="Enter required date.." required>
+                                    <input type="date" name="date" class="form-control round_input" required>
                                     <br>
                                 </div>            
                                 
                                 <div class="col-lg-12">
             
-                                    <label>Bank Name</label>
-                                    <input type="text" name="bankName" class="form-control round_input" placeholder="Enter your Bank name" required>
+                                    <label>Bank name</label>
+                                    <input type="text" name="bankName" class="form-control round_input" placeholder="Enter your bank name . . ." required>
         
                                     <br>
                                 </div>
 
                                 <div class="col-lg-12">
             
-                                    <label>Bank Account Number</label>
-                                    <input type="text" name="acNum" class="form-control round_input" placeholder="Enter your Bank number" required>
+                                    <label>Bank account number</label>
+                                    <input type="text" name="acNum" class="form-control round_input" placeholder="Enter your bank account number . . ." required>
         
                                     <br>
                                 </div>
 
                                 <div class="col-lg-12">
             
-                                    <label>Branch Name</label>
-                                    <input type="text" name="brName" class="form-control round_input" placeholder="Enter your Branch Name of Bank" required>
+                                    <label>Branch name</label>
+                                    <input type="text" name="brName" class="form-control round_input" placeholder="Enter your branch name of the bank . . ." required>
     
-                                    <br> <br><br><br><br>
+                                    <br> <br><br><br>
                                 </div>
 
                                 <div class="col-lg-12">
@@ -127,7 +127,7 @@
                                 {{-- profile pic button--}}
                                 <div class="col-lg-6">
                                     <input type="file" name="patient_pic" id="picFile" hidden="hidden" accept="image/*" required>
-                                    <input type="button" class="btn filebtn"  id="patientPic" value="upload patient picture">
+                                    <input type="button" class="btn filebtn"  id="patientPic" value="Upload patient picture">
                                 </div>
 
                                    {{-- profile pic name --}}
@@ -144,7 +144,7 @@
                                     <br>
                                     <input type="file" id="repoFile" 
                                     name="med_repo" hidden="hidden" required>
-                                    <input type="button" class="btn filebtn" id="medRepo" value="upload medical report">
+                                    <input type="button" class="btn filebtn" id="medRepo" value="Upload medical report">
             
                                 </div>
             
