@@ -406,10 +406,11 @@ img{
 /* ====== Posters Cards====== */
 
 .card-frame{
-  margin:  2% auto;
+  margin:  20px;
   max-width: 1000px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  /* grid-template-columns: repeat(2, minmax(500px, 1fr)); */
+  grid-template-columns: auto auto;
   gap: 20px;
   font-family:  var(--body-font);
 }
@@ -417,10 +418,10 @@ img{
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
   display: flex;
   background: var(--first-color-comments);
-  padding: 1% 1% 1% 1%;
+  padding: 10px;
   border-radius: 10px 30px;
   transition: 0.5s;
-  width: 50%;
+  width: 100%;
   max-width: fit-content;
 }
 .card-body {
@@ -431,8 +432,6 @@ img{
   display: inline-block;
   text-align: justify;
   padding: 0 5px 0 5px;
-  /* min-width: 250px;
-  max-width: 265px; */
   border-radius: 10px 30px;
 }
 .card-body-title {
@@ -440,11 +439,11 @@ img{
   color: var(--title-color);
 }
 .col-image {
-  margin: 1% 1% 1% 1%;
-  max-width: 202px;
-  max-height: 202px;
+  margin: 10px;
+  width: auto;
+  height: 202px;
   align-items: center;
-  background-color: white;
+  /* background-color: white; */
 }
 .card-bodybg-img-left{
   width: 200px;
@@ -496,6 +495,62 @@ img{
 }
 .card-bodybg:hover{
   box-shadow: 5px 5px 5px 5px gray;
+}
+
+@media screen and (max-width: 360px){
+  .card-frame{
+    grid-template-columns: auto;
+    margin: 0 auto;
+  }
+  .card-bodybg{
+    display: flex;
+    width: 285px;
+    height: 250px;
+  }
+  .col-image{
+    width: 125px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .card-body{
+    width: 175px;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-bodybg-img-left{
+    width: 100%;
+    height: auto;
+  }
+ .card-name{
+   padding: 0;
+   margin: 0 0 5px 0;
+   position: relative;
+   top: 90px; }
+  .card-body-title{
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .card-frame{
+    grid-template-columns: auto;
+  }
+  .card-bodybg{
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 978px){
+  .card-frame{
+    grid-template-columns: auto;
+  }
+  .card-bodybg{
+    margin: 0 auto;
+  }
 }
 
 /* ====== Create Form css ====== */
