@@ -437,6 +437,7 @@ img{
 .card-body-title {
   font-size: 1.2em;
   color: var(--title-color);
+  text-align: center;
 }
 .col-image {
   margin: 10px;
