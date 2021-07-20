@@ -73,10 +73,12 @@
                 </div>
 
                 <div class="comments__img">
-                    <form action="">
+                    <form action="{{ route ('messages.store') }}" method="POST">
+                        @csrf
                         <div class="comments__direction">
-                            <textarea rows="4" cols="50" placeholder="Your comments . . ." class="comments__input"></textarea>
-                            <a href="#" class="button" style="align-self: center;" >Submit</a>
+                            <textarea rows="4" cols="50" placeholder="Your comments . . ." class="comments__input" name="message" required></textarea>
+                            <input type="submit" class="button" style="align-self: center;" value="Send">
+                            <!-- <a href="#" class="button" style="align-self: center;" >Submit</a> -->
                         </div>
                     </form>
                 </div>

@@ -15,7 +15,7 @@
         </div>
         <div class="card-body">
             <!--=== Components ===-->
-            <h6 class="card-body-title">Card title</h6>
+            <h6 class="card-body-title">{{ $post->categories->name }}</h6>
             <table class="card-items">
             <tr>
                 <td>Age:</td>
