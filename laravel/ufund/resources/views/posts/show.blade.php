@@ -15,7 +15,7 @@
           <center>
           <div class="body-border">
             
-              <div class="col-image" style="margin-top: 30px">
+              <div style="margin-top: 30px">
                 <img class="profileImage col-md-12"  src="{{ asset('patients/' . $post->NIC_number . '/patient-profile-pic/' . $post->patient_picture) }}" alt="Card image cap">
                 <br><br>
                 
