@@ -681,6 +681,43 @@ input {
     border: black solid 2px;
 }
 
+.body-border .tab {
+    overflow: hidden;
+    border: null;
+    background-color: var(--container-color);
+}
+
+.body-border .tab button {
+    float: left;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+    transition: 2s;
+    margin: 6px;
+    padding: 6px 8px;
+    font-size: 17px;
+    border-left: solid 5px var(--container-color);
+}
+
+.body-border .tab button:first-child {
+    border-left: 0;
+}
+
+/* acitive button show this color */
+.body-border .active {
+    background-color: rgb(142, 230, 241);
+}
+
+.body-border .tab button:hover {
+    background-color: rgb(142, 230, 241);
+}
+
+.body-border .tabView {
+    display: none;
+    padding: 6px 12px;
+}
+
 @media only screen and (max-width: 400px) {
     .body-border .card-name {
         position: relative;
@@ -688,6 +725,11 @@ input {
     }
 }
 
+@media only screen and (max-width: 1050) {
+    .body-border .active {
+        background-color: rgb(142, 230, 241);
+    }
+}
 /*========== comments GIFT ==========*/
 .comments {
     background-color: var(--first-color-comments);
